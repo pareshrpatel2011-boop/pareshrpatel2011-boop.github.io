@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case Studies | Paresh Patel</title>
-    <meta name="description" content="Professional case studies highlighting QA leadership, enterprise data validation, and AI-assisted testing solutions by Paresh Patel." />
+    <meta name="description" content="Recruiter-ready case studies highlighting QA leadership, enterprise data validation, and AI-assisted testing solutions by Paresh Patel." />
     <style>
       :root {
         --bg: #071721;
@@ -319,30 +319,30 @@
           <div>
             <div class="eyebrow">Case studies</div>
             <h1>QA strategy, automation, and data trust.</h1>
-            <p>I design validation systems that make high-risk reports and data pipelines auditable, repeatable, and faster to verify. These examples show how I combine business logic, automation, and source-of-truth checks to reduce regression risk.</p>
+            <p>I help teams move faster without sacrificing trust in their systems. My work combines QA leadership, data validation, and AI-assisted automation to reduce regression risk, improve data quality, and speed up delivery.</p>
             <div class="stats">
               <div class="stat">
                 <strong>30+</strong>
-                <span>reports covered</span>
+                <span>reports validated</span>
               </div>
               <div class="stat">
                 <strong>~2d</strong>
-                <span>cut to under 1h</span>
+                <span>to under 1h</span>
               </div>
               <div class="stat">
                 <strong>40%</strong>
-                <span>lower regression effort</span>
+                <span>less regression effort</span>
               </div>
             </div>
           </div>
 
           <div class="callout">
-            <h3>Quality outcomes</h3>
-            <div class="pill">Business-critical validation</div>
+            <h3>Business impact</h3>
+            <div class="pill">Quality at scale</div>
             <ul class="mini-list">
-              <li><span class="dot"></span>UI, data, and business-rule checks kept analytically separate</li>
-              <li><span class="dot"></span>Warehouse validation established source truth before report trust</li>
-              <li><span class="dot"></span>CI/CD output included screenshots, JSON, Excel, and SQL diagnostics</li>
+              <li><span class="dot"></span>Faster release confidence for critical reporting</li>
+              <li><span class="dot"></span>More reliable dashboards and warehouse data</li>
+              <li><span class="dot"></span>Less manual QA effort across large regression cycles</li>
             </ul>
           </div>
         </div>
@@ -360,8 +360,8 @@
 
             <div class="lead-grid">
               <div>
-                <p><strong>Challenge:</strong> Business teams relied on Power BI dashboards for decisions, but regression testing was manual. Testers had to open each report, read KPI values, compare them against warehouse queries, and validate dozens of visuals by hand. The cycle lasted around two days for 30+ reports and made it easy to miss subtle data issues.</p>
-                <p><strong>Role:</strong> QA Lead, framework architecture and delivery.</p>
+                <p><strong>Challenge:</strong> Business teams depended on Power BI dashboards for decision-making, but regression testing was manual, slow, and difficult to trust. Reports had to be opened one by one, KPI values checked visually, and numbers compared to warehouse queries by hand.</p>
+                <p><strong>Role:</strong> QA Lead responsible for framework design, validation strategy, and team delivery.</p>
                 <div class="stack">
                   <span class="chip">Python</span>
                   <span class="chip">Playwright</span>
@@ -381,49 +381,49 @@
             </div>
 
             <h3 class="section-title">Problem</h3>
-            <p>Manual report validation creates a critical trust gap: dashboards can render correctly but still reflect the wrong numbers. A visual check alone proves the report displayed a value; it does not prove that value matches the business truth in the warehouse. The QA process had become slow, costly, and inconsistent.</p>
+            <p>Dashboards can look correct while still showing wrong numbers. Manual validation was too slow and too inconsistent for a business-critical reporting layer, and it created a real risk of invalid decisions being made from the wrong KPI values.</p>
 
             <h3 class="section-title">Solution</h3>
             <ul class="bullet-list">
-              <li>Built a reusable, configuration-driven validation framework that validated reports across multiple layers.</li>
-              <li>Used Playwright to extract values users actually see in the browser: KPI cards, chart categories, and table/matrix rows.</li>
-              <li>Recomputed expected values in Snowflake with SQL tied to each report’s specific “Data As Of” date to eliminate refresh drift.</li>
-              <li>Added tolerance-based comparisons for single values, grouped charts, and table data using composite keys.</li>
-              <li>Embedded business-rule checks such as no negative counts, percentages summing to 100, and no duplicate keys.</li>
-              <li>Added separate ETL-level checks for missing keys, duplicates, and null control fields before a report was ever trusted.</li>
-              <li>Deployed the framework in CI/CD with parallel execution and generated HTML, JSON, Excel, screenshots, and root-cause SQL outputs for every failed validation.</li>
+              <li>Built a reusable, configuration-driven QA framework that validates reports across UI, data, and business-rule layers.</li>
+              <li>Used Playwright to extract values displayed to users, including KPI cards, chart categories, and table rows.</li>
+              <li>Recomputed expected values directly from Snowflake and dbt logic based on the report’s reporting date to prevent refresh drift.</li>
+              <li>Implemented tolerance-aware comparisons for single values, grouped charts, and detail tables using composite keys.</li>
+              <li>Added business-rule checks for negative counts, percentage totals, missing controls, and duplicate keys.</li>
+              <li>Created ETL-level validation checks for source data integrity before report-level testing began.</li>
+              <li>Integrated the framework into CI/CD so every run produced Excel, JSON, HTML, screenshots, and SQL-based root cause output.</li>
             </ul>
 
-            <h3 class="section-title">Why this mattered</h3>
+            <h3 class="section-title">Why it mattered</h3>
             <div class="highlights">
               <div class="card">
-                <h4>Config over code</h4>
-                <p>New report coverage was added through YAML definitions and SQL files rather than custom framework changes.</p>
+                <h4>Reliable decision support</h4>
+                <p>Reports were tested against both what users see and what the warehouse says — the combination required for trustworthy BI.</p>
               </div>
               <div class="card">
-                <h4>Fail loudly</h4>
-                <p>If a reporting date or calculation context couldn’t be resolved, the check failed with a clear reason instead of silently passing.</p>
+                <h4>Faster regression cycles</h4>
+                <p>Validation moved from a two-day manual process to a repeatable under-one-hour automation workflow.</p>
               </div>
               <div class="card">
-                <h4>Layered validation</h4>
-                <p>UI validation proved the value was displayed; source reconciliation proved the value was correct.</p>
+                <h4>Scalable framework</h4>
+                <p>New reports were added via configuration rather than custom framework changes, making the solution easy to extend.</p>
               </div>
               <div class="card">
-                <h4>AI as accelerator</h4>
-                <p>Claude Code accelerated scaffolding and refactoring without replacing human-owned QA decisions or acceptance criteria.</p>
+                <h4>AI-assisted delivery</h4>
+                <p>Claude Code accelerated scaffolding and refactoring, while QA strategy and acceptance criteria remained human-owned.</p>
               </div>
             </div>
 
-            <h3 class="section-title">Results</h3>
+            <h3 class="section-title">Outcome</h3>
             <ul class="bullet-list">
-              <li>30+ Power BI reports under automated regression validation.</li>
-              <li>Regression validation reduced from roughly two days to under one hour.</li>
-              <li>Results became repeatable, auditable, and extendable across the business.</li>
-              <li>The framework supported both data correctness and user-facing report quality.</li>
+              <li>30+ Power BI reports covered by automated regression testing.</li>
+              <li>Regression validation time reduced from approximately two days to under one hour.</li>
+              <li>Repeatable, auditable results built into every pipeline run.</li>
+              <li>A long-term QA framework for data quality and decision support at scale.</li>
             </ul>
 
             <div class="quote" style="margin-top: 1.25rem;">
-              “The right BI testing model checks both sides: what users see and what the warehouse says.”
+              “The strongest BI validation model checks both sides: what users see and what the data says.”
             </div>
           </article>
 
@@ -434,7 +434,7 @@
                 <h2>AI Test Case Generator</h2>
               </div>
             </div>
-            <p>Created to accelerate validation planning, this workflow transforms business logic and likely failure modes into structured, risk-based test scenarios. It shortens the time required to establish comprehensive coverage while allowing QA teams to remain focused on the most business-critical cases.</p>
+            <p>This project turned business logic and likely failure points into structured, risk-based test scenarios. It reduced the time spent creating validation coverage while helping teams focus effort on the highest-risk areas first.</p>
             <div class="stack">
               <span class="chip">Python</span>
               <span class="chip">AI prompts</span>
@@ -450,7 +450,7 @@
                 <h2>AI SQL Validation Generator</h2>
               </div>
             </div>
-            <p>This project converts validation intent into target SQL checks for completeness, drift, duplicates, and anomaly detection. It reduces the manual effort of writing repeated SQL rules while keeping the final quality decisions under QA ownership.</p>
+            <p>This solution translated validation intent into reusable SQL checks for completeness, drift, duplicates, and anomaly detection. It shortened the time to create and review validation logic without removing human QA control over the final acceptance criteria.</p>
             <div class="stack">
               <span class="chip">SQL</span>
               <span class="chip">Python</span>
@@ -466,7 +466,7 @@
                 <h2>AI ETL Validation Agent</h2>
               </div>
             </div>
-            <p>Designed to automate ETL validation workflows, this system highlights failed records, suspicious transformations, and likely root causes with actionable diagnostics. It helps teams move from detection to correction faster without sacrificing governance or data quality standards.</p>
+            <p>Designed to automate ETL validation workflows, this system surfaced failed records, suspicious transformations, and likely root causes with actionable diagnostics. It helped teams move faster from detection to correction while maintaining governance and quality expectations.</p>
             <div class="stack">
               <span class="chip">ETL/ELT</span>
               <span class="chip">Python</span>
