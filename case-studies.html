@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | Paresh Patel</title>
+    <meta name="description" content="Case studies of AI-assisted QA and data validation work by Paresh Patel." />
+    <style>
+      :root {
+        --bg: #071721;
+        --bg-soft: #0d2330;
+        --panel: #ffffff;
+        --panel-soft: #f3f8fa;
+        --text: #182d39;
+        --text-soft: #5e7585;
+        --line: rgba(20, 40, 53, 0.12);
+        --green: #2cc98a;
+        --green-strong: #15b673;
+        --blue: #3c7bff;
+        --shadow: 0 18px 50px rgba(8, 22, 31, 0.12);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #edf5f8 0%, #f7fafb 100%);
+        line-height: 1.7;
+      }
+      a { color: inherit; }
+      h1, h2, h3 { margin-top: 0; letter-spacing: -0.04em; }
+      p { margin-top: 0; }
+      .container { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(7, 23, 34, 0.82);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(12px);
+      }
+      .nav {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+      }
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--green), #a6ebc8);
+        color: var(--bg);
+        font-weight: 800;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: rgba(230, 240, 246, 0.9);
+        font-size: 0.95rem;
+      }
+      .hero {
+        background: radial-gradient(circle at top right, rgba(60,123,255,0.28), transparent 25%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18), transparent 30%), linear-gradient(180deg, #071721 0%, #0d2330 100%);
+        color: white;
+        padding: 84px 0 72px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid rgba(44, 201, 138, 0.26);
+        background: rgba(44, 201, 138, 0.1);
+        color: #bcefd7;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-size: clamp(2.7rem, 5vw, 4.8rem);
+        margin-bottom: 1rem;
+        line-height: 0.96;
+      }
+      .hero p {
+        max-width: 62ch;
+        color: rgba(231, 240, 244, 0.84);
+        font-size: 1.08rem;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 2rem;
+      }
+      .stat {
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        background: rgba(255,255,255,0.04);
+        padding: 1rem 1rem 0.9rem;
+      }
+      .stat strong {
+        display: block;
+        font-size: 1.8rem;
+        letter-spacing: -0.04em;
+      }
+      .stat span {
+        color: rgba(231, 240, 244, 0.8);
+      }
+      .callout {
+        background: rgba(12, 27, 38, 0.78);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px;
+        box-shadow: 0 26px 70px rgba(0,0,0,0.22);
+        padding: 22px 20px;
+      }
+      .callout h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.9rem;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        padding: 0.42rem 0.7rem;
+        background: rgba(44, 201, 138, 0.14);
+        border: 1px solid rgba(44, 201, 138, 0.32);
+        color: #b9f4d2;
+        font-size: 0.72rem;
+        font-weight: 700;
+      }
+      .mini-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 12px;
+      }
+      .mini-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        padding-bottom: 10px;
+        color: #eaf7fd;
+      }
+      .mini-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--green), #9fe8c2);
+        box-shadow: 0 0 0 3px rgba(44, 201, 138, 0.12);
+      }
+      .content {
+        padding: 72px 0;
+      }
+      .case {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        padding: 2rem;
+      }
+      .case + .case { margin-top: 28px; }
+      .case-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 1.25rem;
+      }
+      .case-header h2 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        margin-bottom: 0.2rem;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        color: var(--text-soft);
+        padding: 0.45rem 0.8rem;
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 26px;
+      }
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 1rem 0 1.3rem;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.42rem 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-soft);
+      }
+      .metric-box {
+        background: linear-gradient(180deg, #f7fbfc 0%, #eef6f8 100%);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1.2rem;
+      }
+      .metric-box strong {
+        display: block;
+        font-size: clamp(2.2rem, 4vw, 3rem);
+        letter-spacing: -0.05em;
+        color: var(--bg);
+      }
+      .metric-box span {
+        color: var(--text-soft);
+      }
+      .bullet-list {
+        margin: 0;
+        padding-left: 1.2rem;
+        color: var(--text-soft);
+      }
+      .bullet-list li + li { margin-top: 0.5rem; }
+      .section-title {
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        margin: 1.2rem 0 0.8rem;
+      }
+      .highlights {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 1rem;
+      }
+      .card {
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1rem 1.1rem;
+      }
+      .card h4 {
+        margin-bottom: 0.4rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--text-soft);
+      }
+      .footer {
+        padding: 30px 0 60px;
+        color: var(--text-soft);
+        text-align: center;
+      }
+      @media (max-width: 760px) {
+        .hero-grid, .grid, .highlights, .stats { grid-template-columns: 1fr; }
+        .nav-links { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="brand" aria-label="Paresh Patel home">
+          <span class="brand-mark">PP</span>
+          <span>Paresh Patel</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">Case studies</div>
+            <h1>QA strategy, automation, and data trust.</h1>
+            <p>I build validation frameworks that make high-risk reports and data pipelines auditable, repeatable, and faster to verify. These cases show how I combine business logic, automation, and warehouse checks to reduce regression risk.</p>
+            <div class="stats">
+              <div class="stat">
+                <strong>30+</strong>
+                <span>reports validated</span>
+              </div>
+              <div class="stat">
+                <strong>~2 days</strong>
+                <span>cut to under 1 hour</span>
+              </div>
+              <div class="stat">
+                <strong>40%</strong>
+                <span>less regression effort</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <h3>Quality outcomes</h3>
+            <div class="pill">Business-critical validation</div>
+            <ul class="mini-list" style="margin-top: 1rem;">
+              <li><span class="dot"></span>UI, data, and business-rule checks separated cleanly</li>
+              <li><span class="dot"></span>Warehouse truth validated before report trust was granted</li>
+              <li><span class="dot"></span>CI/CD reporting included screenshots, JSON, and SQL diagnostics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+
+          <article class="case" id="power-bi-validation">
+            <div class="case-header">
+              <div>
+                <div class="badge">Power BI QA</div>
+                <h2>Automated Power BI Data Validation Framework</h2>
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <p><strong>Challenge:</strong> Business teams relied on Power BI dashboards for decisions, but regression testing was manual. Testers had to open each report, read KPI values, and compare them against warehouse queries one by one. The process took around two days per regression cycle across 30+ reports and left room for missed issues.</p>
+                <p><strong>Role:</strong> QA Lead, framework design and team delivery.</p>
+                <div class="stack">
+                  <span class="chip">Python</span>
+                  <span class="chip">Playwright</span>
+                  <span class="chip">Snowflake</span>
+                  <span class="chip">dbt</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">YAML</span>
+                  <span class="chip">CI/CD</span>
+                  <span class="chip">Claude Code</span>
+                </div>
+              </div>
+
+              <div class="metric-box">
+                <strong>30+ reports</strong>
+                <span>validated in under 1 hour with repeatable, auditable output.</span>
+              </div>
+            </div>
+
+            <h3 class="section-title">Approach</h3>
+            <ul class="bullet-list">
+              <li>UI extraction using Playwright to read values shown to users such as KPI cards, chart category labels, and matrix/table rows.</li>
+              <li>Data reconciliation using SQL in Snowflake/dbt with the report’s specific “Data As Of” date to ensure comparisons never drift across refreshes.</li>
+              <li>Comparison logic with tolerance rules for single values, grouped charts, and full tables using composite keys.</li>
+              <li>Business-rule validation for missing values, duplicate keys, negative counts, and percentage totals that should sum to 100.</li>
+              <li>ETL-layer checks for missing keys, duplicate records, and null control fields before report validation even begins.</li>
+              <li>Pipeline execution across parallel CI agents that produce HTML, JSON, and Excel artifacts with screenshots and automatic SQL diagnostics on failure.</li>
+            </ul>
+
+            <h3 class="section-title">Why this mattered</h3>
+            <div class="highlights">
+              <div class="card">
+                <h4>Config over code</h4>
+                <p>Adding a report meant adding YAML definitions and SQL files instead of adding new framework logic.</p>
+              </div>
+              <div class="card">
+                <h4>Fail loudly</h4>
+                <p>When the “Data As Of” date or report data could not be resolved, the framework failed clearly instead of silently passing.</p>
+              </div>
+              <div class="card">
+                <h4>Layered validation</h4>
+                <p>A browser pass only proves the report displayed a number; source reconciliation proved the number was correct.</p>
+              </div>
+              <div class="card">
+                <h4>AI as accelerator</h4>
+                <p>Claude Code accelerated scaffolding and refactors, while human QA ownership remained in test strategy, SQL logic, and acceptance criteria.</p>
+              </div>
+            </div>
+
+            <h3 class="section-title">Outcome</h3>
+            <ul class="bullet-list">
+              <li>30+ Power BI reports under automated regression validation.</li>
+              <li>Regression validation reduced from around two days to under one hour.</li>
+              <li>Results became repeatable, auditable, and easy to extend through configuration.</li>
+              <li>Quality checks covered both what users see and what the warehouse says.</li>
+            </ul>
+          </article>
+
+          <article class="case" id="case-1">
+            <div class="case-header">
+              <div>
+                <div class="badge">AI QA</div>
+                <h2>AI Test Case Generator</h2>
+              </div>
+            </div>
+            <p>This project focused on converting business rules and data behavior into structured, risk-based test scenarios. Instead of manually writing exhaustive cases for every edge condition, the workflow generated tests that prioritized the highest-risk validations first.</p>
+            <div class="stack">
+              <span class="chip">Python</span>
+              <span class="chip">AI prompts</span>
+              <span class="chip">Risk-based QA</span>
+              <span class="chip">Test design</span>
+            </div>
+          </article>
+
+          <article class="case" id="case-2">
+            <div class="case-header">
+              <div>
+                <div class="badge">Data validation</div>
+                <h2>AI SQL Validation Generator</h2>
+              </div>
+            </div>
+            <p>Built to accelerate reconciliation and completeness checks, this solution converted validation intent into executable SQL logic for missing data, drift, duplicates, and anomaly detection. It reduced the time to create and review validation queries while preserving human QA oversight.</p>
+            <div class="stack">
+              <span class="chip">SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">Reconciliation</span>
+              <span class="chip">Anomaly detection</span>
+            </div>
+          </article>
+
+          <article class="case" id="case-3">
+            <div class="case-header">
+              <div>
+                <div class="badge">ETL QA</div>
+                <h2>AI ETL Validation Agent</h2>
+              </div>
+            </div>
+            <p>This workflow automated ETL validation by producing structured checks for data movement, transformation correctness, and downstream quality issues. It quickly surfaced failed rows, suspect logic, and action-oriented diagnostics for the engineering team.</p>
+            <div class="stack">
+              <span class="chip">ETL/ELT</span>
+              <span class="chip">Python</span>
+              <span class="chip">Automation</span>
+              <span class="chip">Root-cause analysis</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Paresh Patel — QA leadership, data validation, and AI-assisted quality engineering.</p>
+      </div>
+    </footer>
+  </body>
+</html>
