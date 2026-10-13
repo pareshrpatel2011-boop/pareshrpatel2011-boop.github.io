@@ -273,567 +273,196 @@
         border-color: var(--bg);
         color: white;
       }
-      .timeline { display: grid; gap: 20px; }
-      .job {
-        position: relative;
-        padding: 26px 20px 20px 36px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-      }
-      .job::before {
-        content: "";
-        position: absolute;
-        top: 30px;
-        left: 15px;
-        width: 14px;
-        height: 14px;
-        background: var(--blue);
-        border-radius: 50%;
-        box-shadow: 0 0 0 6px rgba(60, 123, 255, 0.12);
-      }
-      .job.current::before {
-        background: var(--green);
-        box-shadow: 0 0 0 6px rgba(44, 201, 138, 0.14);
-      }
-      .job h3 { font-size: 1.5rem; margin-bottom: 0.2rem; }
-      .job-meta { color: var(--text-soft); font-size: 0.86rem; margin-bottom: 0.9rem; }
-      .job ul { list-style: disc; padding-left: 20px; }
-      .job li + li { margin-top: 0.4rem; }
-      .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-      .project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 240px;
-        padding: 1.5rem;
-        border-radius: 24px;
-        background: linear-gradient(180deg, var(--bg) 0%, #122e3d 100%);
-        color: white;
-        position: relative;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-      }
-      .project::after {
-        content: "";
-        position: absolute;
-        right: -46px;
-        bottom: -46px;
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        border: 28px solid rgba(44, 201, 138, 0.12);
-      }
-      .project h3 { font-size: 1.4rem; margin-bottom: 0.65rem; }
-      .project p { color: rgba(214, 235, 244, 0.8); margin: 0; }
-      .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 1.2rem;
-      }
-      .project-links a {
-        text-decoration: none;
-        color: white;
-        background: rgba(255,255,255,0.08);
-        border: 1px solid rgba(255,255,255,0.12);
-        padding: 0.42rem 0.7rem;
-        border-radius: 999px;
-        font-size: 0.76rem;
-        font-weight: 600;
-      }
-      .results { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-      .results-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; }
-      .bars { display: grid; gap: 18px; }
-      .bar-row { display: grid; gap: 8px; }
-      .bar-row .label { display: flex; justify-content: space-between; gap: 12px; color: var(--text-soft); font-size: 0.9rem; }
-      .bar-row strong { color: var(--bg); }
-      .bar-track {
-        width: 100%;
-        height: 12px;
-        border-radius: 999px;
-        background: #edf4f7;
-        border: 1px solid var(--line);
-        overflow: hidden;
-      }
-      .bar-fill {
-        display: block;
-        height: 100%;
-        width: 100%;
-        border-radius: inherit;
-        background: linear-gradient(90deg, var(--green), #90e3c0);
-      }
-      .outcomes { display: grid; gap: 14px; }
-      .outcome { padding: 1.15rem 1rem; border-bottom: 1px solid var(--line); }
-      .outcome:last-child { border-bottom: 0; }
-      .outcome strong { display: inline-block; font-size: 1.7rem; letter-spacing: -0.04em; color: var(--bg); margin-right: 0.4rem; }
-      .edu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-      .edu-item {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-        padding: 1.2rem 1.15rem;
-      }
-      .edu-item.certified { border-left: 4px solid var(--green); }
-      .edu-item h3 { font-size: 1.12rem; margin-bottom: 0.35rem; }
-      .edu-item p { margin: 0; color: var(--text-soft); }
-      .contact-section { background: linear-gradient(180deg, var(--bg) 0%, #0d2736 100%); color: white; }
-      .contact-wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 36px; }
-      .contact-links { display: grid; gap: 14px; margin-top: 2rem; }
-      .contact-links a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 0.9rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-      }
-      .contact-links small { display: block; color: #8eaebd; margin-bottom: 0.2rem; }
-      form { display: grid; gap: 16px; }
-      .field { display: grid; gap: 8px; }
-      label { color: #dfeef9; font-size: 0.9rem; }
-      input, textarea {
-        width: 100%;
-        border-radius: 12px;
-        border: 1px solid rgba(255,255,255,0.18);
-        background: rgba(255,255,255,0.04);
-        color: white;
-        padding: 0.9rem 0.95rem;
-        font: inherit;
-      }
-      input:focus, textarea:focus {
-        outline: 2px solid rgba(44, 201, 138, 0.5);
-        border-color: transparent;
-      }
-      textarea { min-height: 150px; resize: vertical; }
-      footer {
-        background: #061a25;
-        color: rgba(215,233,242,0.9);
-        padding: 28px 0;
-      }
-      .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-      .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-      .footer-links a { color: white; text-decoration: none; }
-      @media (max-width: 950px) {
-        .hero-grid, .two-col, .results-grid, .contact-wrap { grid-template-columns: 1fr; }
-        .expertise-grid, .projects-grid, .edu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      }
-      @media (max-width: 700px) {
-        .nav-toggle {
-          display: inline-flex;
-          background: transparent;
-          color: white;
-          border: 1px solid rgba(255,255,255,0.18);
-          border-radius: 10px;
-          padding: 0.5rem 0.8rem;
-          font: inherit;
-        }
-        .nav-links {
-          display: none;
-          position: absolute;
-          top: 72px;
-          left: 16px;
-          right: 16px;
-          background: rgba(7,23,34,0.96);
-          border-radius: 16px;
-          border: 1px solid rgba(255,255,255,0.08);
-          padding: 18px 20px;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .nav-links.open { display: flex; }
-        .expertise-grid, .projects-grid, .edu-grid, .stats-grid { grid-template-columns: 1fr; }
-        .cta-row { flex-direction: column; }
-        .btn { width: 100%; }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <a href="#top" class="brand" aria-label="Paresh Patel home">
-          <span class="brand-mark">PP</span>
-          <span>Paresh Patel</span>
-        </a>
++      .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
++      .skills-list { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
++      .skills-list h4 { margin: 0 0 8px 0; font-size: 1rem; }
++      .cert-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
++      .cert { background: #f5f8fa; border: 1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-weight: 700; color: var(--text); }
+       .timeline { display: grid; gap: 20px; }
+       .job {
+         position: relative;
+         padding: 26px 20px 20px 36px;
+         background: var(--card);
+         border: 1px solid var(--line);
+         border-radius: 18px;
+         box-shadow: var(--shadow);
+       }
+@@
+       .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+@@
+       .edu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+@@
+       @media (max-width: 700px) {
+@@
+       }
+     </style>
+   </head>
+   <body>
+@@
+       <section id="expertise">
+         <div class="container">
+           <div class="section-head">
+             <h2>Core expertise</h2>
+             <p class="lead">Built around data quality, test automation, validation strategy, and modern AI-enabled delivery.</p>
+           </div>
 
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+           <div class="expertise-grid">
+             <div class="card">
+               <h3>Data &amp; ETL</h3>
+-              <ul class="chip-grid">
+-                <li class="chip emphasis">ETL/ELT</li>
+-                <li class="chip">Data Quality</li>
+-                <li class="chip">Warehouse Testing</li>
+-                <li class="chip">Reconciliation</li>
+-                <li class="chip">Snowflake</li>
+-                <li class="chip">dbt</li>
+-                <li class="chip">Azure Data Factory</li>
+-                <li class="chip">Hadoop/Hive</li>
+-              </ul>
++              <ul class="chip-grid">
++                <li class="chip emphasis">ETL / ELT</li>
++                <li class="chip">Data Quality</li>
++                <li class="chip">Data Warehouse Testing</li>
++                <li class="chip">Reconciliation</li>
++                <li class="chip">Snowflake</li>
++                <li class="chip">dbt</li>
++                <li class="chip">SQL</li>
++                <li class="chip">Source-to-Target Validation</li>
++                <li class="chip">ETL Automation</li>
++                <li class="chip">Data Profiling</li>
++              </ul>
+             </div>
 
-        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#expertise">Expertise</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+             <div class="card">
+               <h3>AI &amp; Automation</h3>
+-              <ul class="chip-grid">
+-                <li class="chip emphasis">Claude Code</li>
+-                <li class="chip">AI Agents</li>
+-                <li class="chip">MCP</li>
+-                <li class="chip">Python</li>
+-                <li class="chip">SQL</li>
+-                <li class="chip">Playwright</li>
+-                <li class="chip">Selenium</li>
+-                <li class="chip">GitHub Copilot</li>
+-              </ul>
++              <ul class="chip-grid">
++                <li class="chip emphasis">Claude Code</li>
++                <li class="chip">AI-assisted QA</li>
++                <li class="chip">AI Agents</li>
++                <li class="chip">MCP</li>
++                <li class="chip">Python</li>
++                <li class="chip">Playwright</li>
++                <li class="chip">Selenium</li>
++                <li class="chip">Test Automation</li>
++                <li class="chip">AI Test Automation</li>
++                <li class="chip">GitHub Copilot</li>
++              </ul>
+             </div>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <div class="eyebrow">QA • Data Quality • AI</div>
-            <h1>Paresh Patel</h1>
-            <div class="hero-role">QA Manager &amp; Data Quality Leader</div>
-            <p class="hero-lead">16+ years building trust into large-scale data systems — from ETL validation and warehouse testing to AI-assisted QA workflows that improve speed, confidence, and delivery predictability.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#projects">View My Work</a>
-              <a class="btn btn-secondary" href="#contact">Contact Me</a>
-              <a class="btn btn-secondary" href="resume.html" target="_blank" rel="noopener">Resume</a>
-            </div>
-            <div class="meta-line">Gandhinagar, Gujarat, India</div>
-          </div>
+             <div class="card">
+               <h3>Leadership &amp; Quality</h3>
+-              <ul class="chip-grid">
+-                <li class="chip emphasis">Test Strategy</li>
+-                <li class="chip">Regression Testing</li>
+-                <li class="chip">Risk-based QA</li>
+-                <li class="chip">RCA</li>
+-                <li class="chip">Defect Governance</li>
+-                <li class="chip">CI/CD</li>
+-                <li class="chip">Stakeholder Leadership</li>
+-              </ul>
++              <ul class="chip-grid">
++                <li class="chip emphasis">Test Strategy</li>
++                <li class="chip">QA Leadership</li>
++                <li class="chip">Regression Testing</li>
++                <li class="chip">Risk-based QA</li>
++                <li class="chip">Root Cause Analysis</li>
++                <li class="chip">Defect Governance</li>
++                <li class="chip">CI/CD & Release Validation</li>
++                <li class="chip">Stakeholder Leadership</li>
++                <li class="chip">Test Automation Strategy</li>
++              </ul>
+             </div>
+           </div>
+         </div>
+       </section>
++
++      <section id="skills">
++        <div class="container">
++          <div class="section-head">
++            <h2>Skills & Certifications</h2>
++            <p class="lead">Recruiter-friendly skills and verified certifications used across my portfolio and delivery work.</p>
++          </div>
++
++          <div class="skills-grid">
++            <div class="skills-list">
++              <h4>Core & Technical Skills</h4>
++              <div class="chip-grid" style="margin-top: 8px;">
++                <span class="chip">QA Leadership</span>
++                <span class="chip">Data Quality Management</span>
++                <span class="chip">ETL/ELT Validation</span>
++                <span class="chip">Data Warehouse Testing</span>
++                <span class="chip">BI / Power BI Validation</span>
++                <span class="chip">Python</span>
++                <span class="chip">SQL</span>
++                <span class="chip">Playwright</span>
++                <span class="chip">Snowflake</span>
++                <span class="chip">dbt</span>
++                <span class="chip">YAML</span>
++                <span class="chip">CI/CD (Jenkins)</span>
++              </div>
++            </div>
++
++            <div class="skills-list">
++              <h4>AI & Modern QA</h4>
++              <div class="chip-grid" style="margin-top: 8px;">
++                <span class="chip">AI-Assisted QA</span>
++                <span class="chip">Claude Code</span>
++                <span class="chip">AI Test Automation</span>
++                <span class="chip">MCP-based Workflows</span>
++                <span class="chip">AI SQL Validation</span>
++                <span class="chip">Test Automation</span>
++              </div>
++
++              <h4 style="margin-top:12px;">Certifications</h4>
++              <div class="cert-list">
++                <span class="cert">Snowflake SnowPro Associate</span>
++                <span class="cert">Claude Code in Action (Anthropic)</span>
++              </div>
++            </div>
++          </div>
++        </div>
++      </section>
+       
+       <section id="experience">
+         <div class="container">
+           <div class="section-head">
+             <h2>Experience</h2>
+             <p class="lead">From disciplined batch validation to leading enterprise QA programs for data platforms.</p>
+           </div>
 
-          <div class="validation-card" aria-label="Pipeline validation summary">
-            <div class="mini-label"><strong>Validation Run</strong><span class="success-badge">20M+ records/day</span></div>
-            <div class="check-row"><span class="check"></span><span>Row counts reconcile</span></div>
-            <div class="check-row"><span class="check"></span><span>Transformation logic holds</span></div>
-            <div class="check-row"><span class="check"></span><span>Data is complete and consistent</span></div>
-            <div class="check-row"><span class="check"></span><span>Reports match backend truth</span></div>
-            <div class="mini-label" style="margin-top: 12px; border-bottom: 0; padding-bottom: 0;"><span>Quality status</span><span class="success-badge">All checks passed</span></div>
-          </div>
-        </div>
-      </section>
+@@
+           <div class="edu-grid">
+             <div class="edu-item">
+               <h3>Master of Science, Information Technology</h3>
+               <p>University of Northern Virginia, USA</p>
+             </div>
+             <div class="edu-item">
+               <h3>Bachelor of Engineering, Electrical Engineering</h3>
+               <p>BVM Engineering College, Gujarat, India</p>
+             </div>
+             <div class="edu-item certified">
+               <h3>Snowflake SnowPro Associate</h3>
+               <p>Certification</p>
+             </div>
+             <div class="edu-item certified">
+               <h3>Claude Code in Action</h3>
+               <p>Anthropic AI</p>
+             </div>
+           </div>
+         </div>
+       </section>
+     </main>
 
-      <div class="stats-band">
-        <div class="container stats-grid">
-          <div class="stat"><strong>35%</strong><span>faster ETL validation</span></div>
-          <div class="stat"><strong>40%</strong><span>less regression effort</span></div>
-          <div class="stat"><strong>30%</strong><span>fewer production defects</span></div>
-          <div class="stat"><strong>10 → 2.5</strong><span>days to resolve defects</span></div>
-        </div>
-      </div>
-
-      <section id="about">
-        <div class="container two-col">
-          <div>
-            <div class="section-head"><h2>Quality as an engineering discipline</h2></div>
-          </div>
-          <div class="about-box">
-            <p>I lead QA delivery for enterprise ETL, data warehouse, BI, and cloud systems, with a focus on turning quality into a measurable engineering capability rather than a late-stage gate.</p>
-            <p>Across 16+ years, I have built automation frameworks, led regression strategy, investigated production anomalies, and mentored engineering teams on practical quality improvement and risk reduction.</p>
-            <p>My current focus is AI-assisted QA — combining Claude Code, AI agents, MCP-driven workflows, SQL, Python, and CI/CD to generate validation logic, accelerate test creation, and improve trustworthy data delivery.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="expertise">
-        <div class="container">
-          <div class="section-head">
-            <h2>Core expertise</h2>
-            <p class="lead">Built around data quality, test automation, validation strategy, and modern AI-enabled delivery.</p>
-          </div>
-
-          <div class="expertise-grid">
-            <div class="card">
-              <h3>Data &amp; ETL</h3>
-              <ul class="chip-grid">
-                <li class="chip emphasis">ETL/ELT</li>
-                <li class="chip">Data Quality</li>
-                <li class="chip">Warehouse Testing</li>
-                <li class="chip">Reconciliation</li>
-                <li class="chip">Snowflake</li>
-                <li class="chip">dbt</li>
-                <li class="chip">Azure Data Factory</li>
-                <li class="chip">Hadoop/Hive</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <h3>AI &amp; Automation</h3>
-              <ul class="chip-grid">
-                <li class="chip emphasis">Claude Code</li>
-                <li class="chip">AI Agents</li>
-                <li class="chip">MCP</li>
-                <li class="chip">Python</li>
-                <li class="chip">SQL</li>
-                <li class="chip">Playwright</li>
-                <li class="chip">Selenium</li>
-                <li class="chip">GitHub Copilot</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <h3>Leadership &amp; Quality</h3>
-              <ul class="chip-grid">
-                <li class="chip emphasis">Test Strategy</li>
-                <li class="chip">Regression Testing</li>
-                <li class="chip">Risk-based QA</li>
-                <li class="chip">RCA</li>
-                <li class="chip">Defect Governance</li>
-                <li class="chip">CI/CD</li>
-                <li class="chip">Stakeholder Leadership</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="container">
-          <div class="section-head">
-            <h2>Experience</h2>
-            <p class="lead">From disciplined batch validation to leading enterprise QA programs for data platforms.</p>
-          </div>
-
-          <div class="timeline">
-            <article class="job current">
-              <h3>QA Manager / QA Lead</h3>
-              <div class="job-meta">Rise Analytics (Trellance) • December 2019 - Present • Gujarat, India</div>
-              <ul>
-                <li>Lead QA delivery for enterprise data and software projects, managing 5 QA engineers and supporting multiple concurrent initiatives.</li>
-                <li>Analyze requirements, acceptance criteria, and data specifications to create test scenarios, test cases, test data, and execution plans.</li>
-                <li>Design and execute backend validation, API testing, regression testing, and data-driven testing across multiple environments.</li>
-                <li>Develop Python-based automation and SQL validation scripts for complex data-processing and backend workflows.</li>
-                <li>Built AI-assisted test automation solutions using Claude Code, Python, and MCP to generate test cases and SQL validation scripts.</li>
-                <li>Developed automated Power BI validation using Playwright, Python, and Snowflake MCP.</li>
-                <li>Created CI/CD pipelines using Jenkins to execute regression test suites automatically across environments, reducing regression effort by 40%.</li>
-                <li>Investigate production defects and data discrepancies through Root Cause Analysis, contributing to a 30% reduction in production defects.</li>
-                <li>Improved average defect resolution time from 10 days to 2.5 days through structured RCA and collaboration with production support.</li>
-                <li>Validate transaction enrichment, predictive data models, and core data using source-to-target mapping and business rules.</li>
-                <li>Write SQL, PL/SQL, and stored procedures for backend validation and data-processing requirements.</li>
-                <li>Established database and software development quality standards across projects.</li>
-                <li>Create QA reporting and test execution dashboards for management using Power BI.</li>
-              </ul>
-            </article>
-
-            <article class="job">
-              <h3>Senior Software Quality Assurance Engineer</h3>
-              <div class="job-meta">YOInsights Technology • June 2018 - August 2019 • India</div>
-              <ul>
-                <li>Architected and maintained hybrid automation frameworks using Selenium WebDriver, Python, and Jenkins CI/CD.</li>
-                <li>Performed backend data validation and integrity testing using complex SQL across multiple environments.</li>
-                <li>Executed REST/SOAP API testing, cross-browser testing, regression testing, and defect reporting.</li>
-                <li>Collaborated with development teams to investigate defects and validate fixes within Agile delivery.</li>
-              </ul>
-            </article>
-
-            <article class="job">
-              <h3>Senior QA Analyst / Test Lead – Data Warehouse</h3>
-              <div class="job-meta">Centraprise Corp - Client: Railinc Inc. • August 2016 - March 2018 • USA</div>
-              <ul>
-                <li>Led QA for large-scale Teradata-to-Hadoop migration, validating applications, ETL processes, data, and distributed workflows.</li>
-                <li>Designed ICEDQ automation frameworks integrated with Jenkins for data and BI validation.</li>
-                <li>Created test scenarios, test cases, test data, and execution reports for migration and enhancement projects.</li>
-                <li>Performed backend validation, reconciliation, and report testing across Hadoop, Oracle, Greenplum, and Teradata.</li>
-                <li>Supported SaaS report migration, Waybill Accuracy enhancements, stored procedures, and real-time mileage processing.</li>
-              </ul>
-            </article>
-
-            <article class="job">
-              <h3>Senior QA Analyst / Test Lead – Data Warehouse</h3>
-              <div class="job-meta">Centraprise Corp - Client: Fidelity Investment Bank • October 2013 - July 2016 • USA</div>
-              <ul>
-                <li>Led QA for enterprise Oracle-to-Greenplum migration and Click Stream Data Model workflows.</li>
-                <li>Tested ETL processes, Informatica, Web Services, Hadoop/Hive, Greenplum, and web applications.</li>
-                <li>Validated Control-M schedules supporting ETL processing and batch workflows.</li>
-                <li>Performed backend data validation for customer profiles, historical data, analytics, and presentation-layer enhancements.</li>
-              </ul>
-            </article>
-
-            <article class="job">
-              <h3>Senior System Analyst / Batch Tester</h3>
-              <div class="job-meta">Niftek Inc - Client: Wells Fargo Bank • February 2012 - October 2013 • USA</div>
-              <ul>
-                <li>Executed batch testing, ETL validation, and backend database testing for banking applications.</li>
-                <li>Developed test scenarios, test plans, RTM, test cases, and execution reports.</li>
-                <li>Validated Autosys jobs and PL/SQL procedures and supported UAT and defect management.</li>
-                <li>Tested customer-facing Bill Pay application functionality and backend processing.</li>
-              </ul>
-            </article>
-
-            <article class="job">
-              <h3>Quality Assurance Engineer</h3>
-              <div class="job-meta">Cyberthink Inc • July 2011 - November 2011 • USA</div>
-              <ul>
-                <li>Executed functional and regression testing and developed automation scripts using QTP and VBScript.</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="container">
-          <div class="section-head">
-            <h2>AI-assisted QA projects</h2>
-            <p class="lead">Systems designed to reduce repetitive validation work and improve the consistency of data quality checks.</p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project">
-              <div>
-                <h3>AI Test Case Generator</h3>
-                <p>Generates structured, risk-aware test scenarios from business logic and data behavior.</p>
-              </div>
-              <div class="project-links">
-                <a href="case-studies.html#case-1">Case study</a>
-                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div>
-                <h3>AI SQL Validation Generator</h3>
-                <p>Turns validation intent into SQL checks for reconciliation, completeness, and anomaly detection.</p>
-              </div>
-              <div class="project-links">
-                <a href="case-studies.html#case-2">Case study</a>
-                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div>
-                <h3>AI ETL Validation Agent</h3>
-                <p>Automates ETL validation flows and highlights failures with actionable diagnostics.</p>
-              </div>
-              <div class="project-links">
-                <a href="case-studies.html#case-3">Case study</a>
-                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </article>
-
-            <article class="project">
-              <div>
-                <h3>Automated Power BI Data Validation Framework</h3>
-                <p>Built a reusable, configuration-driven QA framework using Python, Playwright, Snowflake, dbt, and YAML to validate 30+ Power BI reports with business-rule, ETL, and UI checks.</p>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="results">
-        <div class="container results-grid">
-          <div>
-            <div class="section-head">
-              <h2>Results I can point to</h2>
-              <p class="lead">Measured across data platforms processing 20M+ records daily.</p>
-            </div>
-            <div class="bars">
-              <div class="bar-row">
-                <div class="label"><span>Average defect resolution</span><strong>10 → 2.5 days</strong></div>
-                <div class="bar-track"><span class="bar-fill" style="width: 75%"></span></div>
-              </div>
-              <div class="bar-row">
-                <div class="label"><span>Regression effort</span><strong>40% reduction</strong></div>
-                <div class="bar-track"><span class="bar-fill" style="width: 40%"></span></div>
-              </div>
-              <div class="bar-row">
-                <div class="label"><span>ETL validation efficiency</span><strong>35% improvement</strong></div>
-                <div class="bar-track"><span class="bar-fill" style="width: 35%"></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="outcomes">
-            <div class="outcome"><strong>16+</strong> years in quality engineering and data validation.</div>
-            <div class="outcome"><strong>20M+</strong> records processed daily by the systems I validate.</div>
-            <div class="outcome"><strong>AI-first</strong> QA workflows reducing manual validation bottlenecks.</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="education">
-        <div class="container">
-          <div class="section-head"><h2>Education &amp; certifications</h2></div>
-          <div class="edu-grid">
-            <div class="edu-item">
-              <h3>Master of Science, Information Technology</h3>
-              <p>University of Northern Virginia, USA</p>
-            </div>
-            <div class="edu-item">
-              <h3>Bachelor of Engineering, Electrical Engineering</h3>
-              <p>BVM Engineering College, Gujarat, India</p>
-            </div>
-            <div class="edu-item certified">
-              <h3>Snowflake SnowPro Associate</h3>
-              <p>Certification</p>
-            </div>
-            <div class="edu-item certified">
-              <h3>Claude Code in Action</h3>
-              <p>Anthropic AI</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-wrap">
-        <div>
-          <div class="section-head" style="margin-bottom: 0;"><h2>Let’s talk quality</h2></div>
-          <p class="lead" style="color: rgba(214, 235, 244, 0.8);">Open to conversations about QA leadership, data quality strategy, and AI-assisted validation.</p>
-
-          <div class="contact-links">
-            <a href="mailto:paresh_patel61080@yahoo.com"><small>Email</small>paresh_patel61080@yahoo.com</a>
-            <a href="tel:+917575894331"><small>Phone</small>+91 75758 94331</a>
-            <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/pareshkumarrpatel</a>
-            <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener"><small>GitHub</small>github.com/pareshrpatel2011-boop</a>
-          </div>
-        </div>
-
-        <form id="contactForm">
-          <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Your email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container footer-row">
-        <span>© 2026 Paresh Patel • Gandhinagar, Gujarat, India</span>
-        <div class="footer-links">
-          <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
-          <a href="resume.html" target="_blank" rel="noopener">Resume</a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const navToggle = document.getElementById('navToggle');
-      const navLinks = document.getElementById('navLinks');
-
-      navToggle.addEventListener('click', () => {
-        const open = navLinks.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', String(open));
-      });
-
-      navLinks.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A') {
-          navLinks.classList.remove('open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      const form = document.getElementById('contactForm');
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
-        const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
-        window.location.href = `mailto:paresh_patel61080@yahoo.com?subject=${subject}&body=${body}`;
-      });
-    </script>
-  </body>
-</html>
+@@
+   </body>
+ </html>
