@@ -1,361 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paresh Patel | QA Manager & Data Quality Leader</title>
-<meta name="description" content="Paresh Patel is a QA Manager and Data Quality Leader with 16+ years in ETL and data warehouse testing, test automation and CI/CD, now building AI-assisted QA workflows.">
-<meta property="og:title" content="Paresh Patel | QA Manager & Data Quality Leader">
-<meta property="og:description" content="16+ years making large-scale data systems trustworthy. ETL validation, test automation and AI-assisted QA.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#0E2530;--ink2:#17394A;--paper:#F2F6F8;--card:#fff;--line:#D8E2E7;--text:#1B2F3A;--muted:#5A7280;--pass:#2BB583;--blue:#2F6BFF;--r:14px}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{font:400 1.0625rem/1.65 "Instrument Sans",system-ui,sans-serif;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.1;letter-spacing:-.02em}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
-.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
-section{padding:clamp(64px,9vw,112px) 0}
-h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:12px}
-.lead{color:var(--muted);max-width:56ch;margin-bottom:40px}
-/* nav */
-nav{position:fixed;inset:0 0 auto;z-index:20;transition:background .3s,box-shadow .3s}
-nav.s{background:rgba(14,37,48,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
-.nb{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font:700 1.15rem "Bricolage Grotesque",sans-serif;color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--pass);color:var(--ink);font-size:.9rem}
-.links{display:flex;gap:26px;align-items:center}
-.links a{color:#C9D8DF;text-decoration:none;font-size:.95rem;font-weight:500;transition:color .2s}
-.links a:hover{color:#fff}
-.links .cta{background:#fff;color:var(--ink);padding:8px 16px;border-radius:99px}
-.links .cta:hover{background:var(--pass);color:var(--ink)}
-.menu{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
-/* hero */
-.hero{background:var(--ink);color:#fff;padding:140px 0 96px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:620px;height:620px;right:-180px;top:-200px;background:radial-gradient(closest-side,rgba(47,107,255,.35),transparent);pointer-events:none}
-.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative}
-.hero h1{font-size:clamp(2.8rem,7.5vw,5.6rem);font-weight:700;margin-bottom:10px}
-.role{font:500 clamp(1.15rem,2.4vw,1.5rem) "Bricolage Grotesque",sans-serif;color:var(--pass);margin-bottom:20px}
-.hero p.i{color:#B7CAD3;max-width:46ch;font-size:1.15rem;margin-bottom:32px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.b{display:inline-block;padding:14px 26px;border-radius:99px;font-weight:600;text-decoration:none;transition:transform .2s,background .2s,box-shadow .2s;border:1.5px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
-.b.p{background:var(--pass);color:var(--ink)}
-.b.p:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(43,181,131,.35)}
-.b.g{border-color:rgba(255,255,255,.35);color:#fff}
-.b.g:hover{background:rgba(255,255,255,.1)}
-.where{margin-top:22px;color:#8FA8B4;font-size:.95rem}
-/* validation run */
-.run{background:#0A1B24;border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
-.rh{display:flex;justify-content:space-between;gap:10px;font-size:.88rem;color:#8FA8B4;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:6px}
-.rh b{color:#fff;font-weight:600}
-.ck{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);color:#DCE8ED;font-size:.98rem}
-.ck span.t{width:22px;height:22px;border-radius:50%;border:2px solid #36535F;display:grid;place-items:center;flex:none;transition:.3s}
-.ck span.t:after{content:"";width:6px;height:11px;border:solid var(--ink);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px);opacity:0}
-.ck.ok span.t{background:var(--pass);border-color:var(--pass)}
-.ck.ok span.t:after{opacity:1}
-.rf{display:flex;justify-content:space-between;padding-top:16px;font-size:.9rem;color:#8FA8B4}
-.rf b{color:var(--pass);opacity:0;transition:opacity .4s}
-.run.done .rf b{opacity:1}
-/* proof */
-.proof{background:var(--card);border-bottom:1px solid var(--line);padding:0}
-.pg{display:grid;grid-template-columns:repeat(4,1fr)}
-.pg div{padding:34px 24px;border-left:1px solid var(--line)}
-.pg div:first-child{border-left:0;padding-left:0}
-.pg strong{display:block;font:700 clamp(2.2rem,4.5vw,3.2rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;color:var(--ink)}
-.pg span{color:var(--muted);font-size:.95rem;display:block;margin-top:8px}
-/* about */
-.ab{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
-.ab p{margin-bottom:16px}
-.ab p:last-child{margin:0}
-/* skills */
-.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.sg{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.sg h3{font-size:1.15rem;margin-bottom:16px}
-.ch{display:flex;flex-wrap:wrap;gap:8px}
-.ch li{list-style:none;font-size:.88rem;padding:5px 12px;border-radius:99px;background:var(--paper);color:var(--muted);border:1px solid var(--line)}
-.ch li.k{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:500}
-.sg.wide{grid-column:span 2;background:var(--ink);border-color:var(--ink);color:#fff}
-.sg.wide .ch li{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#C9D8DF}
-.sg.wide .ch li.k{background:var(--pass);color:var(--ink);border-color:var(--pass)}
-/* experience */
-.tl{position:relative;padding-left:34px;border-left:2px solid var(--line);margin-left:6px}
-.job{position:relative;padding-bottom:44px}
-.job:last-child{padding-bottom:0}
-.job:before{content:"";position:absolute;left:-43px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}
-.job.now:before{background:var(--pass);border-color:var(--pass);box-shadow:0 0 0 6px rgba(43,181,131,.2)}
-.job h3{font-size:1.4rem}
-.job .m{color:var(--muted);font-size:.95rem;margin:4px 0 12px}
-.job ul{padding-left:20px;max-width:72ch}
-.job li{margin-bottom:6px}
-.job.now{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;margin-bottom:44px;margin-left:0}
-.job.now:before{left:-43px}
-/* projects */
-.pj{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
-.pc{grid-column:span 2;background:var(--ink);color:#fff;border-radius:var(--r);padding:26px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
-.pc:nth-child(1),.pc:nth-child(2){grid-column:span 3}
-.pc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,37,48,.25)}
-.pc:after{content:"";position:absolute;right:-40px;bottom:-40px;width:150px;height:150px;border-radius:50%;border:26px solid rgba(43,181,131,.18);transition:transform .4s}
-.pc:hover:after{transform:scale(1.25)}
-.pc h3{font-size:1.45rem;max-width:14ch}
-.pc p{color:#B7CAD3;font-size:.95rem;margin-top:12px;max-width:34ch}
-.pt{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
-.pt li{list-style:none;font-size:.88rem;padding:5px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
-.note{color:var(--muted);font-size:.92rem;margin-top:22px}
-/* achievements */
-.ac{background:var(--card);border-block:1px solid var(--line)}
-.ag{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.bars{display:grid;gap:22px}
-.bar small{display:flex;justify-content:space-between;color:var(--muted);font-size:.92rem;margin-bottom:8px}
-.bar small b{color:var(--ink)}
-.tr{height:12px;background:var(--paper);border-radius:99px;overflow:hidden;border:1px solid var(--line)}
-.tr i{display:block;height:100%;border-radius:99px;background:var(--pass);width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
-.tr i.o{background:#B3C3CB}
-.bars.in .tr i{width:var(--w)}
-.al li{list-style:none;padding:18px 0;border-bottom:1px solid var(--line)}
-.al li:last-child{border:0}
-.al b{font:700 1.3rem "Bricolage Grotesque",sans-serif;color:var(--ink);margin-right:8px}
-/* education */
-.ed{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.ec{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.ec h3{font-size:1.15rem;margin-bottom:6px}
-.ec p{color:var(--muted);font-size:.95rem}
-.ec.cert{border-left:4px solid var(--pass)}
-/* contact */
-.ct{background:var(--ink);color:#fff}
-.cg{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
-.ct .lead{color:#9FB5BF}
-.cl a{display:block;color:#fff;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12);transition:padding .2s,color .2s}
-.cl a:hover{color:var(--pass);padding-left:8px}
-.cl small{display:block;color:#7E98A4}
-form{display:grid;gap:14px}
-label{font-size:.92rem;color:#C9D8DF;display:grid;gap:6px}
-input,textarea{font:inherit;padding:13px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;width:100%}
-input:focus,textarea:focus{outline:0;border-color:var(--pass);background:rgba(255,255,255,.1)}
-textarea{min-height:130px;resize:vertical}
-.fm{font-size:.88rem;color:#7E98A4}
-footer{background:#0A1B24;color:#8FA8B4;padding:28px 0;font-size:.92rem}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-footer a{color:#fff;margin-left:18px;text-decoration:none}
-footer a:hover{color:var(--pass)}
-/* hero entrance (single orchestrated moment) */
-.hero .e{opacity:0;transform:translateY(16px);animation:up .8s forwards}
-.hero .e:nth-child(2){animation-delay:.12s}.hero .e:nth-child(3){animation-delay:.24s}.hero .e:nth-child(4){animation-delay:.36s}
-@keyframes up{to{opacity:1;transform:none}}
-@media(max-width:900px){
-.hg,.ab,.ag,.cg{grid-template-columns:1fr;gap:36px}
-.sk{grid-template-columns:1fr 1fr}.sg.wide{grid-column:span 2}
-.pj{grid-template-columns:1fr 1fr}.pc,.pc:nth-child(1),.pc:nth-child(2){grid-column:span 1}
-.pc:last-child{grid-column:span 2}
-.pg{grid-template-columns:1fr 1fr}.pg div:nth-child(3){border-left:0;padding-left:0}.pg div:nth-child(n+3){border-top:1px solid var(--line)}
-.ed{grid-template-columns:1fr}
-}
-@media(max-width:700px){
-.menu{display:block}
-.links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:flex-start;padding:16px 20px 24px;gap:16px}
-.links.open{display:flex}
-.hero{padding:112px 0 64px}
-.sk,.pj{grid-template-columns:1fr}.sg.wide,.pc:last-child{grid-column:auto}
-.job.now{padding:20px}
-.btns .b{flex:1;text-align:center}
-.pg strong{font-size:2rem}.pg div{padding:24px 14px}
-}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero .e{opacity:1;transform:none}.tr i{width:var(--w)}}
-</style>
-</head>
-<body>
-<nav id="nav"><div class="wrap nb">
-<a class="logo" href="#top"><i>PP</i>Paresh Patel</a>
-<button class="menu" id="mb" aria-expanded="false" aria-controls="lk">Menu</button>
-<div class="links" id="lk">
-<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a>
-<a class="cta" href="#contact">Contact</a>
-</div></div></nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paresh Patel | QA Manager & Data Quality Leader</title>
+    <meta
+      name="description"
+      content="Paresh Patel is a QA Manager and Data Quality Leader with 16+ years in ETL, data warehouse testing, automation, and AI-assisted QA workflows."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Paresh Patel | QA Manager & Data Quality Leader" />
+    <meta
+      property="og:description"
+      content="Quality leader focused on ETL validation, test automation, and AI-assisted QA for high-scale data platforms."
+    />
+    <meta property="og:url" content="https://pareshrpatel2011-boop.github.io/" />
+    <meta property="og:image" content="https://pareshrpatel2011-boop.github.io/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Paresh Patel | QA Manager & Data Quality Leader" />
+    <meta
+      name="twitter:description"
+      content="QA leader helping data teams ship reliable, validated systems at scale."
+    />
+    <link rel="canonical" href="https://pareshrpatel2011-boop.github.io/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #071721;
+        --bg-soft: #0f2330;
+        --panel: rgba(14, 29, 39, 0.9);
+        --card: #ffffff;
+        --card-two: #f5f8fa;
+        --text: #182d39;
+        --text-soft: #5d7382;
+        --line: rgba(20, 40, 53, 0.12);
+        --green: #2cc98a;
+        --green-strong: #15b673;
+        --green-soft: rgba(44, 201, 138, 0.12);
+        --blue: #3c7bff;
+        --blue-soft: rgba(60, 123, 255, 0.1);
+        --shadow: 0 24px 60px rgba(6, 18, 28, 0.12);
+      }
 
-<header class="hero" id="top"><div class="wrap hg">
-<div>
-<h1 class="e">Paresh Patel</h1>
-<div class="role e">QA Manager &amp; Data Quality Leader</div>
-<p class="i e">16+ years making large-scale data systems trustworthy, and now building AI-assisted QA workflows.</p>
-<div class="btns e">
-<a class="b p" href="#projects">View My Work</a>
-<a class="b g" href="#contact">Contact Me</a>
-<a class="b g" href="Paresh-Patel-Resume.pdf" download>Download Resume</a>
-</div>
-<p class="where e">Gandhinagar, Gujarat, India</p>
-</div>
-<div class="run e" id="run" aria-label="Illustration of a data validation run">
-<div class="rh"><b>Validation run</b><span>Pipelines of 20M+ records daily</span></div>
-<div class="ck"><span class="t"></span>Row counts reconcile</div>
-<div class="ck"><span class="t"></span>Transformation logic holds</div>
-<div class="ck"><span class="t"></span>Data is complete and consistent</div>
-<div class="ck"><span class="t"></span>Reports match the backend</div>
-<div class="rf"><span>Illustrative</span><b>All checks passed</b></div>
-</div>
-</div></header>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #edf5f8 0%, #f8fafb 100%);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      img { max-width: 100%; display: block; }
+      h1, h2, h3 { font-family: "Space Grotesk", "Inter", sans-serif; letter-spacing: -0.04em; }
+      h1, h2, h3, p { margin-top: 0; }
+      p { margin-bottom: 1rem; }
+      ul { margin: 0; padding: 0; list-style: none; }
+      .container {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(7, 23, 34, 0.78);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(14px);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--green), #99e7bf);
+        color: var(--bg);
+        font-weight: 800;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .nav-links a {
+        color: rgba(224, 239, 246, 0.9);
+        text-decoration: none;
+        font-size: 0.96rem;
+      }
+      .nav-links a:hover { color: white; }
+      .nav-toggle {
+        display: none;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        border-radius: 999px;
+        padding: 0.8rem 1.35rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .btn:hover { transform: translateY(-2px); }
+      .btn-primary {
+        color: var(--bg);
+        background: linear-gradient(135deg, var(--green), #9ce8c0);
+        box-shadow: 0 12px 28px rgba(44,201,138,0.28);
+      }
+      .btn-secondary {
+        color: white;
+        border: 1px solid rgba(255,255,255,0.18);
+        background: rgba(255,255,255,0.02);
+      }
+      .hero {
+        background:
+          radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%),
+          radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+        color: white;
+        padding: 84px 0 70px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.12fr 0.88fr;
+        gap: clamp(34px, 5vw, 72px);
+        align-items: center;
+      }
+      .eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        border: 1px solid rgba(44, 201, 138, 0.28);
+        background: rgba(44, 201, 138, 0.12);
+        color: #b8f4d3;
+        border-radius: 999px;
+        padding: 0.42rem 0.8rem;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .hero h1 {
+        font-size: clamp(3rem, 6vw, 5.7rem);
+        line-height: 0.96;
+        margin-bottom: 0.7rem;
+      }
+      .hero-role {
+        font-size: clamp(1.2rem, 2vw, 1.75rem);
+        color: #9ae0bf;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .hero-lead {
+        font-size: 1.08rem;
+        color: rgba(235, 243, 247, 0.82);
+        max-width: 62ch;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 26px 0 18px;
+      }
+      .meta-line {
+        color: rgba(214, 235, 244, 0.8);
+        font-size: 0.94rem;
+      }
+      .validation-card {
+        background: rgba(11, 28, 38, 0.72);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px;
+        box-shadow: 0 26px 68px rgba(0,0,0,0.26);
+        padding: 22px 20px;
+      }
+      .mini-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(214, 235, 244, 0.78);
+        font-size: 0.8rem;
+        padding-bottom: 14px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .success-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.42rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(44, 201, 138, 0.14);
+        border: 1px solid rgba(44, 201, 138, 0.32);
+        color: #b9f4d2;
+        font-weight: 700;
+        font-size: 0.72rem;
+      }
+      .check-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        color: #eaf7fd;
+      }
+      .check-row:last-child { border-bottom: 0; }
+      .check {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--green), #9ae0bf);
+        position: relative;
+        box-shadow: inset 0 0 0 2px rgba(7, 23, 33, 0.52);
+      }
+      .check::after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 5px;
+        width: 5px;
+        height: 9px;
+        border: solid var(--bg);
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+      .stats-band {
+        background: var(--card);
+        border-bottom: 1px solid var(--line);
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .stat {
+        padding: 1.5rem 1.2rem 1.8rem;
+        border-left: 1px solid var(--line);
+      }
+      .stat:first-child { border-left: 0; }
+      .stat strong {
+        display: block;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        letter-spacing: -0.05em;
+        color: var(--bg);
+      }
+      .stat span {
+        display: block;
+        color: var(--text-soft);
+        font-size: 0.95rem;
+        margin-top: 0.35rem;
+      }
+      section {
+        padding: clamp(58px, 7vw, 110px) 0;
+      }
+      .section-head {
+        margin-bottom: 2rem;
+      }
+      .section-head h2 {
+        font-size: clamp(2.2rem, 4vw, 3rem);
+        margin-bottom: 0.7rem;
+      }
+      .lead {
+        color: var(--text-soft);
+        max-width: 64ch;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: clamp(26px, 5vw, 64px);
+        align-items: start;
+      }
+      .about-box {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 1.6rem;
+        box-shadow: var(--shadow);
+      }
+      .about-box p:last-child { margin-bottom: 0; }
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+        padding: 1.4rem 1.2rem;
+      }
+      .card h3 {
+        font-size: 1.18rem;
+        margin-bottom: 1rem;
+      }
+      .chip-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--line);
+        background: var(--card-two);
+        color: var(--text-soft);
+        border-radius: 999px;
+        padding: 0.47rem 0.76rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .chip.emphasis {
+        background: var(--bg);
+        border-color: var(--bg);
+        color: white;
+      }
+      .timeline {
+        display: grid;
+        gap: 20px;
+      }
+      .job {
+        position: relative;
+        padding: 26px 20px 20px 36px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+      .job::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: 14px;
+        height: 14px;
+        background: var(--blue);
+        border-radius: 50%;
+        box-shadow: 0 0 0 6px rgba(60, 123, 255, 0.12);
+      }
+      .job.current::before {
+        background: var(--green);
+        box-shadow: 0 0 0 6px rgba(44, 201, 138, 0.14);
+      }
+      .job h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+      }
+      .job-meta {
+        color: var(--text-soft);
+        font-size: 0.86rem;
+        margin-bottom: 0.9rem;
+      }
+      .job ul { list-style: disc; padding-left: 20px; }
+      .job li + li { margin-top: 0.4rem; }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 220px;
+        padding: 1.5rem;
+        border-radius: 24px;
+        background: linear-gradient(180deg, var(--bg) 0%, #122e3d 100%);
+        color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .project::after {
+        content: "";
+        position: absolute;
+        right: -46px;
+        bottom: -46px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 28px solid rgba(44, 201, 138, 0.12);
+      }
+      .project h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.65rem;
+      }
+      .project p {
+        color: rgba(214, 235, 244, 0.8);
+        margin: 0;
+      }
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 1.2rem;
+      }
+      .project-links a {
+        text-decoration: none;
+        color: white;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.12);
+        padding: 0.42rem 0.7rem;
+        border-radius: 999px;
+        font-size: 0.76rem;
+        font-weight: 600;
+      }
+      .results {
+        background: var(--card);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .results-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 36px;
+      }
+      .bars {
+        display: grid;
+        gap: 18px;
+      }
+      .bar-row {
+        display: grid;
+        gap: 8px;
+      }
+      .bar-row .label {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--text-soft);
+        font-size: 0.9rem;
+      }
+      .bar-row strong { color: var(--bg); }
+      .bar-track {
+        width: 100%;
+        height: 12px;
+        border-radius: 999px;
+        background: #edf4f7;
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .bar-fill {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--green), #90e3c0);
+      }
+      .outcomes {
+        display: grid;
+        gap: 14px;
+      }
+      .outcome {
+        padding: 1.15rem 1rem;
+        border-bottom: 1px solid var(--line);
+      }
+      .outcome:last-child { border-bottom: 0; }
+      .outcome strong {
+        display: inline-block;
+        font-size: 1.7rem;
+        letter-spacing: -0.04em;
+        color: var(--bg);
+        margin-right: 0.4rem;
+      }
+      .edu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .edu-item {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+        padding: 1.2rem 1.15rem;
+      }
+      .edu-item.certified {
+        border-left: 4px solid var(--green);
+      }
+      .edu-item h3 {
+        font-size: 1.12rem;
+        margin-bottom: 0.35rem;
+      }
+      .edu-item p { margin: 0; color: var(--text-soft); }
+      .contact-section {
+        background: linear-gradient(180deg, var(--bg) 0%, #0d2736 100%);
+        color: white;
+      }
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 36px;
+      }
+      .contact-links {
+        display: grid;
+        gap: 14px;
+        margin-top: 2rem;
+      }
+      .contact-links a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0.9rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .contact-links small {
+        display: block;
+        color: #8eaebd;
+        margin-bottom: 0.2rem;
+      }
+      form {
+        display: grid;
+        gap: 16px;
+      }
+      .field {
+        display: grid;
+        gap: 8px;
+      }
+      label {
+        color: #dfeef9;
+        font-size: 0.9rem;
+      }
+      input, textarea {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.18);
+        background: rgba(255,255,255,0.04);
+        color: white;
+        padding: 0.9rem 0.95rem;
+        font: inherit;
+      }
+      input:focus, textarea:focus {
+        outline: 2px solid rgba(44, 201, 138, 0.5);
+        border-color: transparent;
+      }
+      textarea { min-height: 150px; resize: vertical; }
+      footer {
+        background: #061a25;
+        color: rgba(215,233,242,0.9);
+        padding: 28px 0;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .footer-links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+      }
+      @media (max-width: 950px) {
+        .hero-grid,
+        .two-col,
+        .results-grid,
+        .contact-wrap {
+          grid-template-columns: 1fr;
+        }
+        .expertise-grid,
+        .projects-grid,
+        .edu-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .stats-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 700px) {
+        .nav-toggle {
+          display: inline-flex;
+          background: transparent;
+          color: white;
+          border: 1px solid rgba(255,255,255,0.18);
+          border-radius: 10px;
+          padding: 0.5rem 0.8rem;
+          font: inherit;
+        }
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 72px;
+          left: 16px;
+          right: 16px;
+          background: rgba(7,23,34,0.96);
+          border-radius: 16px;
+          border: 1px solid rgba(255,255,255,0.08);
+          padding: 18px 20px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .nav-links.open { display: flex; }
+        .expertise-grid,
+        .projects-grid,
+        .edu-grid,
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+        .cta-row { flex-direction: column; }
+        .btn { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Paresh Patel home">
+          <span class="brand-mark">PP</span>
+          <span>Paresh Patel</span>
+        </a>
 
-<div class="proof"><div class="wrap pg">
-<div><strong><span data-n="35">35</span>%</strong><span>faster ETL validation</span></div>
-<div><strong><span data-n="40">40</span>%</strong><span>less regression effort</span></div>
-<div><strong><span data-n="30">30</span>%</strong><span>fewer production defects</span></div>
-<div><strong>10 → 2.5</strong><span>days to resolve a defect</span></div>
-</div></div>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
 
-<section id="about"><div class="wrap ab">
-<h2>Quality as an engineering discipline</h2>
-<div>
-<p>I lead QA delivery for enterprise ETL, data warehouse, BI and cloud data systems at Rise Analytics, a Trellance company. My work covers test strategy, automated validation, root cause analysis and clear quality reporting.</p>
-<p>Over 16+ years I have tested data migrations, built automation frameworks and mentored QA engineers. Lately I build AI-assisted tools that generate test cases and SQL validation scripts.</p>
-</div></div></section>
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<section id="skills" style="padding-top:0"><div class="wrap">
-<h2>Skills</h2><p class="lead">Dark chips mark the skills I use most.</p>
-<div class="sk">
-<div class="sg wide"><h3>Data processing</h3><ul class="ch"><li class="k">ETL/ELT</li><li class="k">Data Warehousing</li><li class="k">Data Quality</li><li class="k">Reconciliation</li><li class="k">Snowflake</li><li class="k">dbt</li><li>Data Migration</li><li>Azure Data Factory</li><li>Hadoop/Hive</li><li>Informatica</li><li>Greenplum</li></ul></div>
-<div class="sg"><h3>AI</h3><ul class="ch"><li class="k">Claude Code</li><li class="k">AI Agents</li><li class="k">MCP</li><li>GitHub Copilot</li><li>ChatGPT</li><li>Prompt Engineering</li><li>AI-Assisted Test Generation</li></ul></div>
-<div class="sg"><h3>Testing &amp; V&amp;V</h3><ul class="ch"><li class="k">Test Strategy</li><li class="k">Regression Testing</li><li class="k">Data Validation</li><li class="k">RCA</li><li>Verification &amp; Validation</li><li>Test Planning</li><li>Integration Testing</li><li>Acceptance Testing</li><li>Defect Management</li><li>Risk-Based Testing</li><li>Quality Reporting</li></ul></div>
-<div class="sg"><h3>Automation &amp; CI/CD</h3><ul class="ch"><li class="k">Python</li><li class="k">SQL</li><li class="k">Selenium</li><li class="k">Playwright</li><li class="k">Jenkins</li><li>ICEDQ</li><li>Git</li><li>Azure DevOps</li><li>CI/CD Pipelines</li></ul></div>
-<div class="sg"><h3>Integration &amp; BI</h3><ul class="ch"><li>Power BI</li><li>REST/SOAP APIs</li><li>JSON/XML</li><li>PL/SQL</li><li>Backend Testing</li></ul></div>
-<div class="sg"><h3>Leadership</h3><ul class="ch"><li>Agile/Scrum</li><li>Team Leadership</li><li>QA Governance</li><li>Stakeholder Coordination</li><li>Test Reporting</li><li>Process Improvement</li></ul></div>
-</div></div></section>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">QA • Data Quality • AI</div>
+            <h1>Paresh Patel</h1>
+            <div class="hero-role">QA Manager &amp; Data Quality Leader</div>
+            <p class="hero-lead">
+              16+ years building trust into large-scale data systems — from ETL validation and warehouse testing to AI-assisted QA workflows that improve speed, confidence, and delivery quality.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+              <a class="btn btn-secondary" href="resume.html" target="_blank" rel="noopener">Resume</a>
+            </div>
+            <div class="meta-line">Gandhinagar, Gujarat, India</div>
+          </div>
 
-<section id="experience" style="padding-top:0"><div class="wrap">
-<h2>Experience</h2><p class="lead">From batch testing to leading QA for enterprise data platforms.</p>
-<div class="tl">
-<div class="job now"><h3>QA Manager / QA Lead</h3><div class="m">Rise Analytics (A Trellance Company) · December 2019 to Present · Gujarat, India</div>
-<ul>
-<li>Lead QA for ETL, data processing, BI, data warehouse and cloud data systems across engineering and business teams.</li>
-<li>Cut regression effort by 40% with Selenium/Python automation, dbt validation, Jenkins and CI/CD execution.</li>
-<li>Reduced production defects by 30% and defect resolution time from 10 days to 2.5 days through anomaly investigation and RCA.</li>
-<li>Build AI-assisted QA solutions with Claude Code, AI Agents, MCP, Python, SQL and Azure DevOps.</li>
-<li>Develop Playwright/Python validation for data-driven applications and Power BI outputs.</li>
-<li>Set QA standards and defect-management processes, and mentor QA engineers.</li>
-</ul></div>
-<div class="job"><h3>Senior Software Quality Assurance Engineer</h3><div class="m">Yo Insights Technology · June 2018 to August 2019 · India</div>
-<ul><li>Architected Selenium/Python automation frameworks integrated with Jenkins for repeatable regression testing.</li><li>Ran functional, integration, API, SQL and data validation testing, and verified fixes with developers.</li></ul></div>
-<div class="job"><h3>Senior QA Analyst / Test Lead, Data Warehouse</h3><div class="m">Centraprise Corp · October 2013 to March 2018 · USA</div>
-<ul><li>Led validation for Teradata-to-Hadoop and Oracle-to-Greenplum migrations, covering transformation logic, reconciliation and completeness.</li><li>Designed ICEDQ automated testing frameworks with Jenkins integration.</li><li>Validated Hadoop/Hive workflows, BI reporting and Control-M scheduled processing.</li></ul></div>
-<div class="job"><h3>Senior System Analyst / Batch Tester</h3><div class="m">Niftek Inc. · February 2012 to October 2013 · USA</div>
-<ul><li>Executed ETL, batch, PL/SQL, UAT and mainframe testing, and validated Autosys-scheduled workflows.</li></ul></div>
-<div class="job"><h3>Quality Assurance Engineer</h3><div class="m">Cyberthink Inc. · July 2011 to November 2011 · USA</div>
-<ul><li>Performed functional and regression testing, with automation in QTP/VBScript.</li></ul></div>
-</div></div></section>
+          <div class="validation-card" aria-label="Pipeline validation summary">
+            <div class="mini-label">
+              <strong>Validation Run</strong>
+              <span class="success-badge">20M+ records/day</span>
+            </div>
+            <div class="check-row"><span class="check"></span><span>Row counts reconcile</span></div>
+            <div class="check-row"><span class="check"></span><span>Transformation logic holds</span></div>
+            <div class="check-row"><span class="check"></span><span>Data is complete and consistent</span></div>
+            <div class="check-row"><span class="check"></span><span>Reports match backend truth</span></div>
+            <div class="mini-label" style="margin-top: 12px; border-bottom: 0; padding-bottom: 0;">
+              <span>Quality status</span>
+              <span class="success-badge">All checks passed</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="projects" style="padding-top:0"><div class="wrap">
-<h2>AI-assisted QA projects</h2>
-<p class="lead">Tools I build to generate test cases and SQL validation scripts, and to make QA workflows repeatable.</p>
-<div class="pj">
-<article class="pc"><div><h3>AI Test Case Generator</h3><p>Generates test cases with AI.</p></div></article>
-<article class="pc"><div><h3>AI SQL Validation Generator</h3><p>Generates SQL validation scripts with AI.</p></div></article>
-<article class="pc"><div><h3>AI ETL Validation Agent</h3><p>An AI agent for ETL validation.</p></div></article>
-<article class="pc"><div><h3>AI Power BI Validation Framework</h3><p>Validation for Power BI outputs.</p></div></article>
-<article class="pc"><div><h3>AI QA Reporting Assistant</h3><p>Supports quality reporting.</p></div></article>
-</div>
-<ul class="pt" style="padding:0"><li>Claude Code</li><li>AI Agents</li><li>MCP</li><li>Python</li><li>SQL</li><li>Azure DevOps</li></ul>
-<!-- Add a project link, role and outcome to each card above when you have them. -->
-</div></section>
+      <div class="stats-band">
+        <div class="container stats-grid">
+          <div class="stat">
+            <strong>35%</strong>
+            <span>faster ETL validation</span>
+          </div>
+          <div class="stat">
+            <strong>40%</strong>
+            <span>less regression effort</span>
+          </div>
+          <div class="stat">
+            <strong>30%</strong>
+            <span>fewer production defects</span>
+          </div>
+          <div class="stat">
+            <strong>10 → 2.5</strong>
+            <span>days to resolve defects</span>
+          </div>
+        </div>
+      </div>
 
-<section class="ac" id="achievements"><div class="wrap ag">
-<div><h2>Results I can point to</h2><p class="lead" style="margin-bottom:28px">Measured across data platforms processing 20M+ records daily.</p>
-<div class="bars" id="bars">
-<div class="bar"><small><span>Average defect resolution</span><b>10 days → 2.5 days</b></small><div class="tr"><i class="o" style="--w:100%"></i></div><div class="tr" style="margin-top:6px"><i style="--w:25%"></i></div></div>
-<div class="bar"><small><span>Regression effort reduced</span><b>40%</b></small><div class="tr"><i style="--w:40%"></i></div></div>
-<div class="bar"><small><span>ETL validation efficiency improved</span><b>35%</b></small><div class="tr"><i style="--w:35%"></i></div></div>
-<div class="bar"><small><span>Production defects reduced</span><b>30%</b></small><div class="tr"><i style="--w:30%"></i></div></div>
-</div></div>
-<ul class="al" style="padding:0">
-<li><b>16+ years</b>in software testing and data quality</li>
-<li><b>20M+</b>records processed daily by the pipelines I validate</li>
-<li><b>Certified</b>Snowflake SnowPro Associate and Claude Code in Action</li>
-</ul></div></section>
+      <section id="about">
+        <div class="container two-col">
+          <div>
+            <div class="section-head">
+              <h2>Quality as an engineering discipline</h2>
+            </div>
+          </div>
+          <div class="about-box">
+            <p>
+              I lead QA delivery for enterprise ETL, data warehouse, BI, and cloud systems, with a focus on turning quality into a measurable engineering capability rather than a late-stage gate.
+            </p>
+            <p>
+              Across 16+ years, I have built automation frameworks, led regression strategy, investigated production anomalies, and mentored engineering teams on practical quality improvement and faster validation.
+            </p>
+            <p>
+              My current focus is AI-assisted QA — combining Claude Code, AI agents, MCP-driven workflows, SQL, Python, and CI/CD to generate validation logic, accelerate test creation, and reduce manual overhead while preserving trust in the data.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section id="education"><div class="wrap">
-<h2>Education &amp; certifications</h2><p class="lead">&nbsp;</p>
-<div class="ed">
-<div class="ec"><h3>Master of Science, Information Technology</h3><p>University of Northern Virginia, USA · 2011</p></div>
-<div class="ec"><h3>Bachelor of Engineering, Electrical Engineering</h3><p>BVM Engineering College, Gujarat, India · 2003</p></div>
-<div class="ec cert"><h3>Snowflake SnowPro Associate</h3><p>Certification</p></div>
-<div class="ec cert"><h3>Claude Code in Action</h3><p>Certification, Anthropic AI</p></div>
-</div></div></section>
+      <section id="expertise">
+        <div class="container">
+          <div class="section-head">
+            <h2>Core expertise</h2>
+            <p class="lead">Built around data quality, test automation, validation strategy, and modern AI-enabled delivery.</p>
+          </div>
 
-<section class="ct" id="contact"><div class="wrap cg">
-<div><h2>Let's talk quality</h2><p class="lead">Open to conversations about QA leadership and data quality.</p>
-<div class="cl">
-<a href="mailto:paresh_patel61080@yahoo.com"><small>Email</small>paresh_patel61080@yahoo.com</a>
-<a href="tel:+917575894331"><small>Phone</small>+91 75758 94331</a>
-<a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/pareshkumarrpatel</a>
-</div></div>
-<form id="f"><label>Your name<input id="n" required autocomplete="name"></label>
-<label>Your email<input id="e" type="email" required autocomplete="email"></label>
-<label>Message<textarea id="m" required></textarea></label>
-<button class="b p" type="submit">Send message</button>
-<p class="fm">This opens your email app with the message ready to send.</p></form>
-</div></section>
+          <div class="expertise-grid">
+            <div class="card">
+              <h3>Data &amp; ETL</h3>
+              <ul class="chip-grid">
+                <li class="chip emphasis">ETL/ELT</li>
+                <li class="chip">Data Quality</li>
+                <li class="chip">Warehouse Testing</li>
+                <li class="chip">Reconciliation</li>
+                <li class="chip">Snowflake</li>
+                <li class="chip">dbt</li>
+                <li class="chip">Azure Data Factory</li>
+                <li class="chip">Hadoop/Hive</li>
+              </ul>
+            </div>
 
-<footer><div class="wrap"><span>© <span id="y"></span> Paresh Patel · Gandhinagar, Gujarat, India</span>
-<span><a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:paresh_patel61080@yahoo.com">Email</a><a href="Paresh-Patel-Resume.pdf" download>Resume</a></span></div></footer>
+            <div class="card">
+              <h3>AI &amp; Automation</h3>
+              <ul class="chip-grid">
+                <li class="chip emphasis">Claude Code</li>
+                <li class="chip">AI Agents</li>
+                <li class="chip">MCP</li>
+                <li class="chip">Python</li>
+                <li class="chip">SQL</li>
+                <li class="chip">Playwright</li>
+                <li class="chip">Selenium</li>
+                <li class="chip">GitHub Copilot</li>
+              </ul>
+            </div>
 
-<script>
-const $=s=>document.querySelector(s),nav=$('#nav'),lk=$('#lk'),mb=$('#mb');
-$('#y').textContent=new Date().getFullYear();
-addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>40),{passive:true});
-mb.onclick=()=>{const o=lk.classList.toggle('open');mb.setAttribute('aria-expanded',o)};
-lk.onclick=e=>{if(e.target.tagName==='A'){lk.classList.remove('open');mb.setAttribute('aria-expanded',false)}};
-// hero validation run: checks tick off in sequence
-const run=$('#run'),cks=[...run.querySelectorAll('.ck')];
-cks.forEach((c,i)=>setTimeout(()=>{c.classList.add('ok');if(i===cks.length-1)run.classList.add('done')},1000+i*650));
-// count-up and bars, once each when seen
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;io.unobserve(x.target);
-if(x.target.id==='bars'){x.target.classList.add('in');return}
-if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-x.target.querySelectorAll('[data-n]').forEach(s=>{const t=+s.dataset.n,t0=performance.now();
-const f=n=>{const p=Math.min((n-t0)/1100,1);s.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}),{threshold:.4});
-io.observe($('.proof'));io.observe($('#bars'));
-$('#f').onsubmit=e=>{e.preventDefault();
-const b=encodeURIComponent(`${$('#m').value}\n\nFrom: ${$('#n').value} (${$('#e').value})`);
-location.href=`mailto:paresh_patel61080@yahoo.com?subject=${encodeURIComponent('Portfolio enquiry from '+$('#n').value)}&body=${b}`};
-</script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body>
+            <div class="card">
+              <h3>Leadership &amp; Quality</h3>
+              <ul class="chip-grid">
+                <li class="chip emphasis">Test Strategy</li>
+                <li class="chip">Regression Testing</li>
+                <li class="chip">Risk-based QA</li>
+                <li class="chip">RCA</li>
+                <li class="chip">Defect Governance</li>
+                <li class="chip">CI/CD</li>
+                <li class="chip">Stakeholder Leadership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2>Experience</h2>
+            <p class="lead">From disciplined batch validation to leading enterprise QA programs for data platforms.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="job current">
+              <h3>QA Manager / QA Lead</h3>
+              <div class="job-meta">Rise Analytics (A Trellance Company) • Dec 2019 – Present</div>
+              <ul>
+                <li>Lead QA delivery across ETL, data processing, BI, data warehouse, and cloud data systems.</li>
+                <li>Reduced regression effort by 40% through automation, validation frameworks, and CI/CD-driven execution.</li>
+                <li>Improved defect resolution time from 10 days to 2.5 days using anomaly investigation, root-cause analysis, and QA governance.</li>
+                <li>Built AI-assisted quality workflows using Claude Code, AI agents, MCP, SQL, and Azure DevOps.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Senior Software QA Engineer</h3>
+              <div class="job-meta">Yo Insights Technology • Jun 2018 – Aug 2019</div>
+              <ul>
+                <li>Architected Selenium/Python automation frameworks connected to Jenkins for repeatable regression coverage.</li>
+                <li>Validated API flows, SQL logic, and UI behaviors across integration and end-to-end testing scenarios.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Senior QA Analyst / Test Lead, Data Warehouse</h3>
+              <div class="job-meta">Centraprise Corp • Oct 2013 – Mar 2018</div>
+              <ul>
+                <li>Led validation for Teradata-to-Hadoop and Oracle-to-Greenplum migrations.</li>
+                <li>Designed automated validation frameworks and verified reconciliation, completeness, transformation logic, and data consistency.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>AI-assisted QA projects</h2>
+            <p class="lead">Systems designed to reduce repetitive validation work and improve the consistency of data quality checks.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project">
+              <div>
+                <h3>AI Test Case Generator</h3>
+                <p>Generates structured, risk-aware test scenarios from business logic and data behavior.</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div>
+                <h3>AI SQL Validation Generator</h3>
+                <p>Turns validation intent into SQL checks for reconciliation, completeness, and anomaly detection.</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div>
+                <h3>AI ETL Validation Agent</h3>
+                <p>Automates ETL validation flows and highlights failures with actionable diagnostics.</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="results">
+        <div class="container results-grid">
+          <div>
+            <div class="section-head">
+              <h2>Results I can point to</h2>
+              <p class="lead">Measured across data platforms processing 20M+ records daily.</p>
+            </div>
+            <div class="bars">
+              <div class="bar-row">
+                <div class="label"><span>Average defect resolution</span><strong>10 → 2.5 days</strong></div>
+                <div class="bar-track"><span class="bar-fill" style="width: 75%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="label"><span>Regression effort</span><strong>40% reduction</strong></div>
+                <div class="bar-track"><span class="bar-fill" style="width: 40%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="label"><span>ETL validation efficiency</span><strong>35% improvement</strong></div>
+                <div class="bar-track"><span class="bar-fill" style="width: 35%"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="outcomes">
+            <div class="outcome"><strong>16+</strong> years in quality engineering and data validation.</div>
+            <div class="outcome"><strong>20M+</strong> records processed daily by the systems I validate.</div>
+            <div class="outcome"><strong>AI-first</strong> QA workflows reducing manual validation bottlenecks.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="container">
+          <div class="section-head">
+            <h2>Education &amp; certifications</h2>
+          </div>
+          <div class="edu-grid">
+            <div class="edu-item">
+              <h3>Master of Science, Information Technology</h3>
+              <p>University of Northern Virginia, USA</p>
+            </div>
+            <div class="edu-item">
+              <h3>Bachelor of Engineering, Electrical Engineering</h3>
+              <p>BVM Engineering College, Gujarat, India</p>
+            </div>
+            <div class="edu-item certified">
+              <h3>Snowflake SnowPro Associate</h3>
+              <p>Certification</p>
+            </div>
+            <div class="edu-item certified">
+              <h3>Claude Code in Action</h3>
+              <p>Anthropic AI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div>
+          <div class="section-head" style="margin-bottom: 0;">
+            <h2>Let’s talk quality</h2>
+          </div>
+          <p class="lead" style="color: rgba(214, 235, 244, 0.8);">
+            Open to conversations about QA leadership, data quality strategy, and AI-assisted validation.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:paresh_patel61080@yahoo.com">
+              <small>Email</small>
+              paresh_patel61080@yahoo.com
+            </a>
+            <a href="tel:+917575894331">
+              <small>Phone</small>
+              +91 75758 94331
+            </a>
+            <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">
+              <small>LinkedIn</small>
+              linkedin.com/in/pareshkumarrpatel
+            </a>
+            <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">
+              <small>GitHub</small>
+              github.com/pareshrpatel2011-boop
+            </a>
+          </div>
+        </div>
+
+        <form id="contactForm">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 Paresh Patel • Gandhinagar, Gujarat, India</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">GitHub</a>
+          <a href="resume.html" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      navToggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(open));
+      });
+
+      navLinks.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navLinks.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+        const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+        window.location.href = `mailto:paresh_patel61080@yahoo.com?subject=${subject}&body=${body}`;
+      });
+    </script>
+  </body>
 </html>
