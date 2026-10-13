@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paresh Patel | QA Manager & Data Quality Leader</title>
-    <meta name="description" content="Paresh Patel is a QA Manager and Data Quality Leader with 16+ years in ETL, data warehouse testing, automation, and AI-assisted QA workflows." />
+    <meta
+      name="description"
+      content="Paresh Patel is a QA Manager and Data Quality Leader with 16+ years in ETL, data warehouse testing, automation, and AI-assisted QA workflows."
+    />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Paresh Patel | QA Manager & Data Quality Leader" />
-    <meta property="og:description" content="Quality leader focused on ETL validation, test automation, and AI-assisted QA for high-scale data platforms." />
+    <meta
+      property="og:description"
+      content="Quality leader focused on ETL validation, test automation, and AI-assisted QA for high-scale data platforms."
+    />
     <meta property="og:url" content="https://pareshrpatel2011-boop.github.io/" />
     <meta property="og:image" content="https://pareshrpatel2011-boop.github.io/og-image.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Paresh Patel | QA Manager & Data Quality Leader" />
-    <meta name="twitter:description" content="QA leader helping data teams ship reliable, validated systems at scale." />
+    <meta
+      name="twitter:description"
+      content="QA leader helping data teams ship reliable, validated systems at scale."
+    />
     <link rel="canonical" href="https://pareshrpatel2011-boop.github.io/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
         --bg: #071721;
@@ -53,6 +65,7 @@
       p { margin-bottom: 1rem; }
       ul { margin: 0; padding: 0; list-style: none; }
       .container { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+
       .topbar {
         position: sticky;
         top: 0;
@@ -97,7 +110,6 @@
         font-size: 0.96rem;
       }
       .nav-links a:hover { color: white; }
-      .nav-toggle { display: none; }
       .btn {
         display: inline-flex;
         align-items: center;
@@ -120,8 +132,9 @@
         border: 1px solid rgba(255,255,255,0.18);
         background: rgba(255,255,255,0.02);
       }
+
       .hero {
-        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(180deg, #071721 0%, #0c2030 100%);
+        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(180deg, #071721 0%, #0c1f2b 100%);
         color: white;
         padding: 84px 0 70px;
       }
@@ -198,271 +211,550 @@
         border: 1px solid rgba(44, 201, 138, 0.32);
         color: #b9f4d2;
         font-weight: 700;
-        font-size: 0.72rem;
       }
-      .check-row {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 14px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        color: #eaf7fd;
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 16px;
+        margin-top: 18px;
       }
-      .check-row:last-child { border-bottom: 0; }
-      .check {
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, var(--green), #9ae0bf);
-        position: relative;
-        box-shadow: inset 0 0 0 2px rgba(7, 23, 33, 0.52);
+      .metric-box {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px;
+        padding: 16px;
       }
-      .check::after {
-        content: "";
-        position: absolute;
-        left: 8px;
-        top: 5px;
-        width: 5px;
-        height: 9px;
-        border: solid var(--bg);
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
+      .metric-box strong {
+        display: block;
+        font-size: 1.7rem;
+        color: white;
+        line-height: 1.1;
+        margin-bottom: 4px;
       }
-      .stats-band { background: var(--card); border-bottom: 1px solid var(--line); }
-      .stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      .stat { padding: 1.5rem 1.2rem 1.8rem; border-left: 1px solid var(--line); }
-      .stat:first-child { border-left: 0; }
-      .stat strong { display: block; font-size: clamp(2rem, 4vw, 2.75rem); letter-spacing: -0.05em; color: var(--bg); }
-      .stat span { display: block; color: var(--text-soft); font-size: 0.95rem; margin-top: 0.35rem; }
-      section { padding: clamp(58px, 7vw, 110px) 0; }
-      .section-head { margin-bottom: 2rem; }
-      .section-head h2 { font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: 0.7rem; }
-      .lead { color: var(--text-soft); max-width: 64ch; }
-      .two-col { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(26px, 5vw, 64px); align-items: start; }
-      .about-box {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        padding: 1.6rem;
-        box-shadow: var(--shadow);
+      .metric-box span {
+        color: rgba(214, 235, 244, 0.8);
+        font-size: 0.82rem;
       }
-      .about-box p:last-child { margin-bottom: 0; }
-      .expertise-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+
+      .section {
+        padding: 88px 0;
+      }
+      .section-header {
+        margin-bottom: 30px;
+      }
+      .kicker {
+        display: inline-block;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--green-strong);
+        margin-bottom: 12px;
+      }
+      .section h2 {
+        font-size: clamp(2.1rem, 4vw, 3.25rem);
+        line-height: 1.1;
+        margin-bottom: 16px;
+      }
+      .lede {
+        color: var(--text-soft);
+        font-size: 1.06rem;
+        max-width: 68ch;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+      }
       .card {
         background: var(--card);
         border: 1px solid var(--line);
         border-radius: 22px;
         box-shadow: var(--shadow);
-        padding: 1.4rem 1.2rem;
+        padding: 28px;
       }
-      .card h3 { font-size: 1.18rem; margin-bottom: 1rem; }
-      .chip-grid { display: flex; flex-wrap: wrap; gap: 9px; }
-      .chip {
+      .about-copy {
+        font-size: 1.04rem;
+        color: var(--text);
+      }
+      .testimonial-box {
+        background: linear-gradient(180deg, rgba(44,201,138,0.08), rgba(60,123,255,0.05));
+      }
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+      .pill {
         display: inline-flex;
         align-items: center;
-        border: 1px solid var(--line);
-        background: var(--card-two);
-        color: var(--text-soft);
+        padding: 0.72rem 1rem;
         border-radius: 999px;
-        padding: 0.47rem 0.76rem;
-        font-size: 0.8rem;
+        background: var(--card-two);
+        border: 1px solid var(--line);
+        color: var(--text);
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px;
+      }
+      .skill-block {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+      .skill-block h3 {
+        margin-bottom: 14px;
+        font-size: 1.4rem;
+      }
+      .skill-block ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .skill-block li {
+        background: rgba(44,201,138,0.08);
+        border: 1px solid rgba(44,201,138,0.18);
+        color: var(--text);
+        border-radius: 999px;
+        padding: 0.62rem 0.9rem;
+        font-size: 0.88rem;
         font-weight: 600;
       }
-      .chip.emphasis {
-        background: var(--bg);
-        border-color: var(--bg);
-        color: white;
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
       }
-+      .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
-+      .skills-list { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
-+      .skills-list h4 { margin: 0 0 8px 0; font-size: 1rem; }
-+      .cert-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-+      .cert { background: #f5f8fa; border: 1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-weight: 700; color: var(--text); }
-       .timeline { display: grid; gap: 20px; }
-       .job {
-         position: relative;
-         padding: 26px 20px 20px 36px;
-         background: var(--card);
-         border: 1px solid var(--line);
-         border-radius: 18px;
-         box-shadow: var(--shadow);
-       }
-@@
-       .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-@@
-       .edu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-@@
-       @media (max-width: 700px) {
-@@
-       }
-     </style>
-   </head>
-   <body>
-@@
-       <section id="expertise">
-         <div class="container">
-           <div class="section-head">
-             <h2>Core expertise</h2>
-             <p class="lead">Built around data quality, test automation, validation strategy, and modern AI-enabled delivery.</p>
-           </div>
+      .cert-card {
+        background: linear-gradient(180deg, #ffffff 0%, #f6fbfd 100%);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+      .cert-badge {
+        width: 52px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--green), #a1ebc8);
+        color: var(--bg);
+        border-radius: 16px;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+      .cert-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+      }
+      .cert-card p {
+        color: var(--text-soft);
+        margin: 0;
+      }
 
-           <div class="expertise-grid">
-             <div class="card">
-               <h3>Data &amp; ETL</h3>
--              <ul class="chip-grid">
--                <li class="chip emphasis">ETL/ELT</li>
--                <li class="chip">Data Quality</li>
--                <li class="chip">Warehouse Testing</li>
--                <li class="chip">Reconciliation</li>
--                <li class="chip">Snowflake</li>
--                <li class="chip">dbt</li>
--                <li class="chip">Azure Data Factory</li>
--                <li class="chip">Hadoop/Hive</li>
--              </ul>
-+              <ul class="chip-grid">
-+                <li class="chip emphasis">ETL / ELT</li>
-+                <li class="chip">Data Quality</li>
-+                <li class="chip">Data Warehouse Testing</li>
-+                <li class="chip">Reconciliation</li>
-+                <li class="chip">Snowflake</li>
-+                <li class="chip">dbt</li>
-+                <li class="chip">SQL</li>
-+                <li class="chip">Source-to-Target Validation</li>
-+                <li class="chip">ETL Automation</li>
-+                <li class="chip">Data Profiling</li>
-+              </ul>
-             </div>
+      .project-shell {
+        background: linear-gradient(180deg, #f2f7f9 0%, #edf5f8 100%);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .project-header {
+        background: linear-gradient(135deg, #0e2531 0%, #122d3c 100%);
+        color: white;
+        padding: 28px 28px 20px;
+      }
+      .project-header h3 {
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+        margin-bottom: 10px;
+      }
+      .project-body {
+        padding: 28px;
+      }
+      .project-points {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .point-card {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .point-card h4 {
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+      }
+      .point-card p {
+        color: var(--text-soft);
+        margin-bottom: 0;
+      }
+      .impact-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+      .impact-box {
+        background: rgba(44,201,138,0.1);
+        border: 1px solid rgba(44,201,138,0.18);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .impact-box strong {
+        display: block;
+        font-size: 1.8rem;
+        color: var(--bg);
+        margin-bottom: 4px;
+      }
+      .impact-box span {
+        color: var(--text);
+        font-weight: 600;
+      }
 
-             <div class="card">
-               <h3>AI &amp; Automation</h3>
--              <ul class="chip-grid">
--                <li class="chip emphasis">Claude Code</li>
--                <li class="chip">AI Agents</li>
--                <li class="chip">MCP</li>
--                <li class="chip">Python</li>
--                <li class="chip">SQL</li>
--                <li class="chip">Playwright</li>
--                <li class="chip">Selenium</li>
--                <li class="chip">GitHub Copilot</li>
--              </ul>
-+              <ul class="chip-grid">
-+                <li class="chip emphasis">Claude Code</li>
-+                <li class="chip">AI-assisted QA</li>
-+                <li class="chip">AI Agents</li>
-+                <li class="chip">MCP</li>
-+                <li class="chip">Python</li>
-+                <li class="chip">Playwright</li>
-+                <li class="chip">Selenium</li>
-+                <li class="chip">Test Automation</li>
-+                <li class="chip">AI Test Automation</li>
-+                <li class="chip">GitHub Copilot</li>
-+              </ul>
-             </div>
+      .cta-panel {
+        background: linear-gradient(135deg, #071721 0%, #0e2732 100%);
+        color: white;
+        border-radius: 24px;
+        padding: 34px 28px;
+      }
+      .cta-panel h3 {
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        margin-bottom: 12px;
+      }
+      .cta-panel p {
+        color: rgba(235, 243, 247, 0.8);
+      }
+      .cta-panel .btn-primary {
+        margin-right: 12px;
+      }
 
-             <div class="card">
-               <h3>Leadership &amp; Quality</h3>
--              <ul class="chip-grid">
--                <li class="chip emphasis">Test Strategy</li>
--                <li class="chip">Regression Testing</li>
--                <li class="chip">Risk-based QA</li>
--                <li class="chip">RCA</li>
--                <li class="chip">Defect Governance</li>
--                <li class="chip">CI/CD</li>
--                <li class="chip">Stakeholder Leadership</li>
--              </ul>
-+              <ul class="chip-grid">
-+                <li class="chip emphasis">Test Strategy</li>
-+                <li class="chip">QA Leadership</li>
-+                <li class="chip">Regression Testing</li>
-+                <li class="chip">Risk-based QA</li>
-+                <li class="chip">Root Cause Analysis</li>
-+                <li class="chip">Defect Governance</li>
-+                <li class="chip">CI/CD & Release Validation</li>
-+                <li class="chip">Stakeholder Leadership</li>
-+                <li class="chip">Test Automation Strategy</li>
-+              </ul>
-             </div>
-           </div>
-         </div>
-       </section>
-+
-+      <section id="skills">
-+        <div class="container">
-+          <div class="section-head">
-+            <h2>Skills & Certifications</h2>
-+            <p class="lead">Recruiter-friendly skills and verified certifications used across my portfolio and delivery work.</p>
-+          </div>
-+
-+          <div class="skills-grid">
-+            <div class="skills-list">
-+              <h4>Core & Technical Skills</h4>
-+              <div class="chip-grid" style="margin-top: 8px;">
-+                <span class="chip">QA Leadership</span>
-+                <span class="chip">Data Quality Management</span>
-+                <span class="chip">ETL/ELT Validation</span>
-+                <span class="chip">Data Warehouse Testing</span>
-+                <span class="chip">BI / Power BI Validation</span>
-+                <span class="chip">Python</span>
-+                <span class="chip">SQL</span>
-+                <span class="chip">Playwright</span>
-+                <span class="chip">Snowflake</span>
-+                <span class="chip">dbt</span>
-+                <span class="chip">YAML</span>
-+                <span class="chip">CI/CD (Jenkins)</span>
-+              </div>
-+            </div>
-+
-+            <div class="skills-list">
-+              <h4>AI & Modern QA</h4>
-+              <div class="chip-grid" style="margin-top: 8px;">
-+                <span class="chip">AI-Assisted QA</span>
-+                <span class="chip">Claude Code</span>
-+                <span class="chip">AI Test Automation</span>
-+                <span class="chip">MCP-based Workflows</span>
-+                <span class="chip">AI SQL Validation</span>
-+                <span class="chip">Test Automation</span>
-+              </div>
-+
-+              <h4 style="margin-top:12px;">Certifications</h4>
-+              <div class="cert-list">
-+                <span class="cert">Snowflake SnowPro Associate</span>
-+                <span class="cert">Claude Code in Action (Anthropic)</span>
-+              </div>
-+            </div>
-+          </div>
-+        </div>
-+      </section>
-       
-       <section id="experience">
-         <div class="container">
-           <div class="section-head">
-             <h2>Experience</h2>
-             <p class="lead">From disciplined batch validation to leading enterprise QA programs for data platforms.</p>
-           </div>
+      footer {
+        padding: 28px 0 60px;
+        color: var(--text-soft);
+        text-align: center;
+      }
 
-@@
-           <div class="edu-grid">
-             <div class="edu-item">
-               <h3>Master of Science, Information Technology</h3>
-               <p>University of Northern Virginia, USA</p>
-             </div>
-             <div class="edu-item">
-               <h3>Bachelor of Engineering, Electrical Engineering</h3>
-               <p>BVM Engineering College, Gujarat, India</p>
-             </div>
-             <div class="edu-item certified">
-               <h3>Snowflake SnowPro Associate</h3>
-               <p>Certification</p>
-             </div>
-             <div class="edu-item certified">
-               <h3>Claude Code in Action</h3>
-               <p>Anthropic AI</p>
-             </div>
-           </div>
-         </div>
-       </section>
-     </main>
+      @media (max-width: 900px) {
+        .hero-grid,
+        .about-grid,
+        .skills-grid,
+        .project-points,
+        .impact-row,
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+        .nav-links { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Paresh Patel home">
+          <span class="brand-mark">P</span>
+          <span>Paresh Patel</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-@@
-   </body>
- </html>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">QA Leader • Data Quality • Automation</div>
+            <h1>Paresh Patel</h1>
+            <div class="hero-role">QA Manager &amp; Data Quality Leader</div>
+            <p class="hero-lead">
+              I help data and business teams trust the numbers behind their decisions by combining
+              ETL validation, warehouse testing, automation, and AI-assisted QA workflows at scale.
+            </p>
+            <div class="cta-row">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Connect</a>
+            </div>
+            <div class="meta-line">16+ years in ETL, database testing, automation, and modern analytics quality</div>
+          </div>
+
+          <div class="validation-card" aria-label="Portfolio summary card">
+            <div class="mini-label">
+              <span>Quality Coverage</span>
+              <span class="success-badge">Live</span>
+            </div>
+            <div class="metric-grid">
+              <div class="metric-box">
+                <strong>30+</strong>
+                <span>Power BI reports automated</span>
+              </div>
+              <div class="metric-box">
+                <strong>&lt;1h</strong>
+                <span>Regression cycle time</span>
+              </div>
+              <div class="metric-box">
+                <strong>2 days</strong>
+                <span>Reduced from manual validation</span>
+              </div>
+              <div class="metric-box">
+                <strong>100%</strong>
+                <span>Data-driven validation approach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">About</span>
+            <h2>Turning reporting risk into measurable trust.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="card about-copy">
+              <p>
+                I’m a QA and data quality leader focused on making enterprise reporting reliable,
+                repeatable, and defensible. My background spans ETL validation, warehouse testing,
+                data reconciliation, automation, and cross-functional quality strategy for large-scale
+                analytics platforms.
+              </p>
+              <p>
+                I’ve built frameworks that test what users see in dashboards and ensure the underlying
+                warehouse logic is correct. That includes validating Power BI visuals against source data,
+                automating regression checks, and catching production risks before business teams rely on
+                the numbers.
+              </p>
+              <div class="pill-list">
+                <span class="pill">ETL Validation</span>
+                <span class="pill">Data Warehouse Testing</span>
+                <span class="pill">Power BI QA</span>
+                <span class="pill">Automation</span>
+                <span class="pill">AI-Assisted QA</span>
+                <span class="pill">Leadership</span>
+              </div>
+            </div>
+
+            <div class="card testimonial-box">
+              <p class="kicker" style="margin-bottom: 10px;">Focus</p>
+              <h3 style="margin-bottom: 16px;">What I bring</h3>
+              <p>
+                I build testing systems that validate both the user experience and the source of truth,
+                so organizations can move faster without sacrificing data confidence.
+              </p>
+              <ul>
+                <li>• Data quality strategy and governance</li>
+                <li>• Test automation frameworks for analytics</li>
+                <li>• Cross-functional QA leadership</li>
+                <li>• Business-critical reconciliation checks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Core Skills</span>
+            <h2>Skills and technical expertise</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h3>QA &amp; Data Quality</h3>
+              <ul>
+                <li>QA Leadership</li>
+                <li>Data Quality Management</li>
+                <li>ETL Validation</li>
+                <li>Data Warehouse Testing</li>
+                <li>Power BI Validation</li>
+                <li>Regression Testing</li>
+                <li>Business Rule Testing</li>
+                <li>Root Cause Analysis</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h3>Data &amp; Analytics Stack</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Snowflake</li>
+                <li>dbt</li>
+                <li>Power BI</li>
+                <li>ETL/ELT</li>
+                <li>Data Modeling</li>
+                <li>Warehouse QA</li>
+                <li>Data Reconciliation</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h3>Automation &amp; Testing</h3>
+              <ul>
+                <li>Python</li>
+                <li>Playwright</li>
+                <li>Test Automation</li>
+                <li>CI/CD Pipelines</li>
+                <li>YAML</li>
+                <li>Test Strategy</li>
+                <li>Automation Framework Design</li>
+                <li>Quality Gates</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h3>AI-Enabled Delivery</h3>
+              <ul>
+                <li>AI-Assisted QA</li>
+                <li>Claude Code</li>
+                <li>Prompt Engineering</li>
+                <li>Automation Acceleration</li>
+                <li>Quality Engineering</li>
+                <li>Process Optimization</li>
+                <li>Scalable Validation</li>
+                <li>Team Enablement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Certifications</span>
+            <h2>Validated expertise and continuous learning</h2>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-badge">S</div>
+              <h3>Snowflake SnowPro Associate</h3>
+              <p>Data cloud and warehouse fundamentals, architecture, and operational knowledge.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge">C</div>
+              <h3>Claude Code</h3>
+              <p>AI-assisted software and QA workflows for faster delivery, refactoring, and automation.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge">QA</div>
+              <h3>Quality Engineering</h3>
+              <p>Applied quality strategy across ETL, analytics platforms, and business reporting systems.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Featured Project</span>
+            <h2>Automated Power BI Data Validation Framework</h2>
+          </div>
+
+          <div class="project-shell">
+            <div class="project-header">
+              <h3>Business-critical dashboard testing, automated end to end.</h3>
+              <p style="color: rgba(235,243,247,0.8); margin: 0; max-width: 72ch;">
+                Built a reusable, configuration-driven QA framework that validated Power BI outputs against
+                warehouse logic and browser-rendered data using Python, Playwright, SQL, Snowflake, dbt, and CI/CD.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <div class="project-points">
+                <div class="point-card">
+                  <h4>1. UI extraction</h4>
+                  <p>
+                    Playwright opened each report in a real browser and read displayed KPI cards, chart values,
+                    and table rows to validate what end users actually saw.
+                  </p>
+                </div>
+
+                <div class="point-card">
+                  <h4>2. Data reconciliation</h4>
+                  <p>
+                    SQL recomputed the expected numbers in Snowflake using each report’s own “Data As Of” date,
+                    preventing mismatches caused by data drift during refresh cycles.
+                  </p>
+                </div>
+
+                <div class="point-card">
+                  <h4>3. Tolerance-based comparison</h4>
+                  <p>
+                    A Python comparator matched single values, grouped chart output, and tables using composite keys,
+                    returning PASS, WARNING, or FAIL based on configured tolerances.
+                  </p>
+                </div>
+
+                <div class="point-card">
+                  <h4>4. Business and ETL checks</h4>
+                  <p>
+                    The framework caught negative values, percentage mismatches, duplicate keys, null control fields,
+                    and missing data before they reached business users.
+                  </p>
+                </div>
+              </div>
+
+              <div class="impact-row">
+                <div class="impact-box">
+                  <strong>30+</strong>
+                  <span>reports under automated validation</span>
+                </div>
+                <div class="impact-box">
+                  <strong>2 days</strong>
+                  <span>reduced to under 1 hour</span>
+                </div>
+                <div class="impact-box">
+                  <strong>100%</strong>
+                  <span>repeatable and auditable process</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="cta-panel">
+            <span class="kicker" style="color: #b8f4d3;">Let’s connect</span>
+            <h3>Helping organizations trust their data and reporting.</h3>
+            <p>
+              Open to QA leadership, data quality strategy, automation, and analytics validation opportunities.
+            </p>
+            <div class="cta-row" style="margin-bottom: 0;">
+              <a href="mailto:paresh.patel.qa@gmail.com" class="btn btn-primary">Email Me</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="btn btn-secondary">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 Paresh Patel — QA Manager &amp; Data Quality Leader</div>
+    </footer>
+  </body>
+</html>
