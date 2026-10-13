@@ -223,55 +223,81 @@
         color: rgba(214, 235, 244, 0.8);
         font-size: 0.94rem;
       }
+
       .validation-card {
-        background: rgba(11, 28, 38, 0.72);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 24px;
+        background: rgba(11, 28, 38, 0.78);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
         box-shadow: 0 26px 68px rgba(0,0,0,0.26);
         padding: 22px 20px;
       }
-      .mini-label {
+      .run-head {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: rgba(214, 235, 244, 0.78);
-        font-size: 0.8rem;
-        padding-bottom: 14px;
-        margin-bottom: 4px;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-      }
-      .success-badge {
-        display: inline-flex;
-        align-items: center;
-        padding: 0.42rem 0.7rem;
-        border-radius: 999px;
-        background: rgba(44, 201, 138, 0.14);
-        border: 1px solid rgba(44, 201, 138, 0.32);
-        color: #b9f4d2;
-        font-weight: 700;
-      }
-      .metric-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
         gap: 16px;
-        margin-top: 18px;
+        color: rgba(214, 235, 244, 0.78);
+        font-size: 0.88rem;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        margin-bottom: 6px;
       }
-      .metric-box {
-        background: rgba(255,255,255,0.03);
-        border: 1px solid rgba(255,255,255,0.06);
-        border-radius: 16px;
-        padding: 16px;
-      }
-      .metric-box strong {
-        display: block;
-        font-size: 1.7rem;
-        color: white;
+      .run-head b {
+        color: #fff;
+        font-size: 2.1rem;
         line-height: 1.1;
-        margin-bottom: 4px;
+        letter-spacing: -0.04em;
+        font-family: "Bricolage Grotesque", "Space Grotesk", sans-serif;
       }
-      .metric-box span {
-        color: rgba(214, 235, 244, 0.8);
-        font-size: 0.82rem;
+      .run-head span {
+        color: rgba(214, 235, 244, 0.9);
+        font-size: 0.9rem;
+      }
+      .checklist {
+        display: flex;
+        flex-direction: column;
+      }
+      .check {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        color: #DCE8ED;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+      .check:last-child { border-bottom: 0; }
+      .check .tick {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 2px solid var(--pass);
+        background: var(--pass);
+        display: grid;
+        place-items: center;
+        flex: none;
+      }
+      .check .tick:after {
+        content: "";
+        width: 6px;
+        height: 11px;
+        border: solid var(--ink);
+        border-width: 0 2.5px 2.5px 0;
+        transform: rotate(45deg) translate(-1px, -1px);
+      }
+      .run-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        font-size: 0.9rem;
+        color: #8FA8B4;
+      }
+      .run-footer b {
+        color: var(--pass);
+        font-weight: 700;
+        font-size: 1.08rem;
       }
       .hero .e { opacity: 0; transform: translateY(16px); animation: up .8s forwards; }
       .hero .e:nth-child(2){ animation-delay: .12s; }
@@ -821,28 +847,20 @@
             <div class="meta-line e">16+ years in ETL, database testing, automation, and modern analytics quality</div>
           </div>
 
-          <div class="validation-card e" aria-label="Portfolio summary card">
-            <div class="mini-label">
-              <span>Quality Coverage</span>
-              <span class="success-badge">Live</span>
+          <div class="validation-card validation-run e" aria-label="Illustration of a data validation run">
+            <div class="run-head">
+              <b>Validation run</b>
+              <span>Pipelines of 20M+ records daily</span>
             </div>
-            <div class="metric-grid">
-              <div class="metric-box">
-                <strong>30+</strong>
-                <span>Power BI reports automated</span>
-              </div>
-              <div class="metric-box">
-                <strong>&lt;1h</strong>
-                <span>Regression cycle time</span>
-              </div>
-              <div class="metric-box">
-                <strong>2 days</strong>
-                <span>Reduced from manual validation</span>
-              </div>
-              <div class="metric-box">
-                <strong>100%</strong>
-                <span>Data-driven validation approach</span>
-              </div>
+            <div class="checklist">
+              <div class="check"><span class="tick"></span>Row counts reconcile</div>
+              <div class="check"><span class="tick"></span>Transformation logic holds</div>
+              <div class="check"><span class="tick"></span>Data is complete and consistent</div>
+              <div class="check"><span class="tick"></span>Reports match the backend</div>
+            </div>
+            <div class="run-footer">
+              <span>Illustrative</span>
+              <b>All checks passed</b>
             </div>
           </div>
         </div>
