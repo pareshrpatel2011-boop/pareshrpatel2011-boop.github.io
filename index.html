@@ -182,6 +182,22 @@
         align-items: center;
         position: relative;
       }
+      .profile-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+.profile-photo {
+  width: min(360px, 70vw);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 28px 54px rgba(0, 0, 0, 0.22);
+  background: #f5f5f5;
+}
       .eyebrow {
         display: inline-flex;
         gap: 8px;
@@ -847,17 +863,10 @@
             <div class="meta-line e">16+ years in ETL, database testing, automation, and modern analytics quality</div>
           </div>
 
-          <div class="validation-card validation-run e" aria-label="Illustration of a data validation run">
-            <div class="run-head">
-              <b>Validation run</b>
-              <span>Pipelines of 20M+ records daily</span>
-            </div>
-            <div class="checklist">
-              <div class="check"><span class="tick"></span>Row counts reconcile</div>
-              <div class="check"><span class="tick"></span>Transformation logic holds</div>
-              <div class="check"><span class="tick"></span>Data is complete and consistent</div>
-              <div class="check"><span class="tick"></span>Reports match the backend</div>
-            </div>
+          <div class="profile-wrap e" aria-label="Profile photo">
+            <img src="profile-photo.svg" alt="Paresh Patel" class="profile-photo" />
+          </div>
+          
             <div class="run-footer">
               <span>Illustrative</span>
               <b>All checks passed</b>
