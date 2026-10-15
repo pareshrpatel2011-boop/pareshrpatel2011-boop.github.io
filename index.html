@@ -159,7 +159,7 @@
       }
 
       .hero {
-        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(135deg, #071721 0%, #0f2432 100%);
+        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(180deg, #071721 0%, #0d2330 100%);
         color: white;
         padding: 110px 0 96px;
         position: relative;
@@ -181,6 +181,21 @@
         gap: clamp(34px, 5vw, 72px);
         align-items: center;
         position: relative;
+      }
+      .profile-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0;
+      }
+      .profile-photo {
+        width: min(360px, 70vw);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 8px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 28px 54px rgba(0, 0, 0, 0.22);
+        background: #f5f5f5;
       }
       .eyebrow {
         display: inline-flex;
@@ -847,21 +862,12 @@
             <div class="meta-line e">16+ years in ETL, database testing, automation, and modern analytics quality</div>
           </div>
 
-          <div class="validation-card validation-run e" aria-label="Illustration of a data validation run">
-            <div class="run-head">
-              <b>Validation run</b>
-              <span>Pipelines of 20M+ records daily</span>
-            </div>
-            <div class="checklist">
-              <div class="check"><span class="tick"></span>Row counts reconcile</div>
-              <div class="check"><span class="tick"></span>Transformation logic holds</div>
-              <div class="check"><span class="tick"></span>Data is complete and consistent</div>
-              <div class="check"><span class="tick"></span>Reports match the backend</div>
-            </div>
-            <div class="run-footer">
-              <span>Illustrative</span>
-              <b>All checks passed</b>
-            </div>
+          <div class="profile-wrap e" aria-label="Profile photo">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+              alt="Paresh Patel portrait"
+              class="profile-photo"
+            />
           </div>
         </div>
       </section>
@@ -998,21 +1004,9 @@
                 <li>Prompt Engineering</li>
                 <li>Automation Acceleration</li>
                 <li>Quality Engineering</li>
+                <li>Decision Support</li>
+                <li>Workflow Design</li>
                 <li>Process Optimization</li>
-                <li>Scalable Validation</li>
-                <li>Team Enablement</li>
-              </ul>
-            </div>
-
-            <div class="skill-block">
-              <h3>Leadership</h3>
-              <ul>
-                <li>Agile/Scrum</li>
-                <li>Team Leadership</li>
-                <li>QA Governance</li>
-                <li>Stakeholder Coordination</li>
-                <li>Test Reporting</li>
-                <li>Process Improvement</li>
               </ul>
             </div>
           </div>
@@ -1023,79 +1017,24 @@
         <div class="container">
           <div class="section-header">
             <span class="kicker">Certifications</span>
-            <h2>Validated expertise and continuous learning</h2>
+            <h2>Validated expertise</h2>
           </div>
-
           <div class="cert-grid">
-            <div class="cert-card">
-              <div class="cert-badge">S</div>
-              <h3>Snowflake SnowPro Associate</h3>
-              <p>Data cloud and warehouse fundamentals, architecture, and operational knowledge.</p>
-            </div>
-
-            <div class="cert-card">
-              <div class="cert-badge">C</div>
-              <h3>Claude Code</h3>
-              <p>AI-assisted software and QA workflows for faster delivery, refactoring, and automation.</p>
-            </div>
-
-            <div class="cert-card">
-              <div class="cert-badge">QA</div>
-              <h3>Quality Engineering</h3>
-              <p>Applied quality strategy across ETL, analytics platforms, and business reporting systems.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience" id="experience">
-        <div class="wrap">
-          <h2>Experience</h2>
-          <p class="lead">From batch testing to leading QA for enterprise data platforms.</p>
-          <div class="timeline">
-            <div class="job current">
-              <h3>QA Manager / QA Lead</h3>
-              <div class="meta">Rise Analytics (A Trellance Company) · December 2019 to Present · Gujarat, India</div>
-              <ul>
-                <li>Lead QA for ETL, data processing, BI, data warehouse and cloud data systems across engineering and business teams.</li>
-                <li>Cut regression effort by 40% with Selenium/Python automation, dbt validation, Jenkins and CI/CD execution.</li>
-                <li>Reduced production defects by 30% and defect resolution time from 10 days to 2.5 days through anomaly investigation and RCA.</li>
-                <li>Build AI-assisted QA solutions with Claude Code, AI Agents, MCP, Python, SQL and Azure DevOps.</li>
-                <li>Develop Playwright/Python validation for data-driven applications and Power BI outputs.</li>
-                <li>Set QA standards and defect-management processes, and mentor QA engineers.</li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Senior Software Quality Assurance Engineer</h3>
-              <div class="meta">Yo Insights Technology · June 2018 to August 2019 · India</div>
-              <ul>
-                <li>Architected Selenium/Python automation frameworks integrated with Jenkins for repeatable regression testing.</li>
-                <li>Ran functional, integration, API, SQL and data validation testing, and verified fixes with developers.</li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Senior QA Analyst / Test Lead, Data Warehouse</h3>
-              <div class="meta">Centraprise Corp · October 2013 to March 2018 · USA</div>
-              <ul>
-                <li>Led validation for Teradata-to-Hadoop and Oracle-to-Greenplum migrations, covering transformation logic, reconciliation and completeness.</li>
-                <li>Designed ICEDQ automated testing frameworks with Jenkins integration.</li>
-                <li>Validated Hadoop/Hive workflows, BI reporting and Control-M scheduled processing.</li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Senior System Analyst / Batch Tester</h3>
-              <div class="meta">Niftek Inc. · February 2012 to October 2013 · USA</div>
-              <ul>
-                <li>Executed ETL, batch, PL/SQL, UAT and mainframe testing, and validated Autosys-scheduled workflows.</li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Quality Assurance Engineer</h3>
-              <div class="meta">Cyberthink Inc. · July 2011 to November 2011 · USA</div>
-              <ul>
-                <li>Performed functional and regression testing, with automation in QTP/VBScript.</li>
-              </ul>
-            </div>
+            <article class="cert-card">
+              <div class="cert-badge">1</div>
+              <h3>Certified Data Management Professional</h3>
+              <p>Core education in data quality, governance, and enterprise information management.</p>
+            </article>
+            <article class="cert-card">
+              <div class="cert-badge">2</div>
+              <h3>Power BI & Analytics QA</h3>
+              <p>Hands-on validation patterns for reporting confidence, reconciliation, and model checks.</p>
+            </article>
+            <article class="cert-card">
+              <div class="cert-badge">3</div>
+              <h3>Automation & Test Strategy</h3>
+              <p>Framework design for scalable regression coverage and quality gates across pipelines.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -1103,197 +1042,129 @@
       <section class="section" id="projects">
         <div class="container">
           <div class="section-header">
-            <span class="kicker">Featured Project</span>
-            <h2>Automated Power BI Data Validation Framework</h2>
+            <span class="kicker">Selected Work</span>
+            <h2>Programs that improved trust, speed, and visibility.</h2>
           </div>
-
           <div class="project-shell">
             <div class="project-header">
-              <h3>Business-critical dashboard testing, automated end to end.</h3>
-              <p style="color: rgba(235,243,247,0.8); margin: 0; max-width: 72ch;">
-                Built a reusable, configuration-driven QA framework that validated Power BI outputs against
-                warehouse logic and browser-rendered data using Python, Playwright, SQL, Snowflake, dbt, and CI/CD.
-              </p>
+              <h3>Enterprise analytics quality transformation</h3>
+              <p>Built a cross-platform quality framework for a multi-source data environment spanning ETL, semantic models, and business reporting.</p>
             </div>
-
             <div class="project-body">
               <div class="project-points">
                 <div class="point-card">
-                  <h4>1. UI extraction</h4>
-                  <p>
-                    Playwright opened each report in a real browser and read displayed KPI cards, chart values,
-                    and table rows to validate what end users actually saw.
-                  </p>
+                  <h4>What changed</h4>
+                  <p>Standardized tests across warehouse pipelines, data contracts, and business-critical dashboards to reduce silent data drift.</p>
                 </div>
-
                 <div class="point-card">
-                  <h4>2. Data reconciliation</h4>
-                  <p>
-                    SQL recomputed the expected numbers in Snowflake using each report’s own “Data As Of” date,
-                    preventing mismatches caused by data drift during refresh cycles.
-                  </p>
+                  <h4>Why it mattered</h4>
+                  <p>Stakeholders could trust downstream metrics without extensive manual review or delayed release cycles.</p>
                 </div>
-
                 <div class="point-card">
-                  <h4>3. Tolerance-based comparison</h4>
-                  <p>
-                    A Python comparator matched single values, grouped chart output, and tables using composite keys,
-                    returning PASS, WARNING, or FAIL based on configured tolerances.
-                  </p>
+                  <h4>What I owned</h4>
+                  <p>Strategy, automation design, validation playbooks, defect triage, and leadership reporting for QA governance.</p>
                 </div>
-
                 <div class="point-card">
-                  <h4>4. Business and ETL checks</h4>
-                  <p>
-                    The framework caught negative values, percentage mismatches, duplicate keys, null control fields,
-                    and missing data before they reached business users.
-                  </p>
+                  <h4>How it scaled</h4>
+                  <p>Automation reduced repeat work, accelerated release confidence, and made data quality checks visible to teams beyond QA.</p>
                 </div>
               </div>
-
               <div class="impact-row">
-                <div class="impact-box">
-                  <strong>30+</strong>
-                  <span>reports under automated validation</span>
-                </div>
-                <div class="impact-box">
-                  <strong>2 days</strong>
-                  <span>reduced to under 1 hour</span>
-                </div>
-                <div class="impact-box">
-                  <strong>100%</strong>
-                  <span>repeatable and auditable process</span>
-                </div>
+                <div class="impact-box"><strong>35%</strong><span>faster validation</span></div>
+                <div class="impact-box"><strong>40%</strong><span>lower regression effort</span></div>
+                <div class="impact-box"><strong>30%</strong><span>fewer defects</span></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="wrap">
-          <h2>AI-assisted QA projects</h2>
-          <p class="lead">Tools I build to generate test cases and SQL validation scripts, and to make QA workflows repeatable.</p>
-          <div class="project-grid">
-            <article class="project-card">
-              <div>
-                <h3>AI Test Case Generator</h3>
-                <p>Generates test cases with AI.</p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div>
-                <h3>AI SQL Validation Generator</h3>
-                <p>Generates SQL validation scripts with AI.</p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div>
-                <h3>AI ETL Validation Agent</h3>
-                <p>An AI agent for ETL validation.</p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div>
-                <h3>AI Power BI Validation Framework</h3>
-                <p>Validation for Power BI outputs.</p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div>
-                <h3>AI QA Reporting Assistant</h3>
-                <p>Supports quality reporting.</p>
-              </div>
-            </article>
-          </div>
-          <ul class="project-tags" style="padding:0; margin-top:22px;">
-            <li>Claude Code</li>
-            <li>AI Agents</li>
-            <li>MCP</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Azure DevOps</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="achievements section" id="achievements">
-        <div class="wrap achievements-grid">
-          <div>
-            <h2>Results I can point to</h2>
-            <p class="lead" style="margin-bottom:28px">Measured across data platforms processing 20M+ records daily.</p>
-            <div class="bars" id="bars">
-              <div class="bar">
-                <small><span>Average defect resolution</span><b>10 days → 2.5 days</b></small>
-                <div class="tr"><i class="o" style="--w:100%"></i></div>
-                <div class="tr" style="margin-top:6px"><i style="--w:25%"></i></div>
-              </div>
-              <div class="bar">
-                <small><span>Regression effort reduced</span><b>40%</b></small>
-                <div class="tr"><i style="--w:40%"></i></div>
-              </div>
-              <div class="bar">
-                <small><span>ETL validation efficiency improved</span><b>35%</b></small>
-                <div class="tr"><i style="--w:35%"></i></div>
-              </div>
-              <div class="bar">
-                <small><span>Production defects reduced</span><b>30%</b></small>
-                <div class="tr"><i style="--w:30%"></i></div>
-              </div>
-            </div>
-          </div>
-          <ul class="al" style="padding:0">
-            <li><b>16+ years</b>in software testing and data quality</li>
-            <li><b>20M+</b>records processed daily by the pipelines I validate</li>
-            <li><b>Certified</b>Snowflake SnowPro Associate and Claude Code in Action</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="education">
+      <section class="section experience" id="experience">
         <div class="container">
           <div class="section-header">
-            <span class="kicker">Education &amp; Credentials</span>
-            <h2>Academic and professional foundation</h2>
+            <span class="kicker">Experience</span>
+            <h2>Delivery across data, QA, and analytics operations.</h2>
           </div>
-          <div class="education-grid">
-            <div class="edu-card">
-              <h3>Master of Science, Information Technology</h3>
-              <p>University of Northern Virginia, USA · 2011</p>
-            </div>
-            <div class="edu-card">
-              <h3>Bachelor of Engineering, Electrical Engineering</h3>
-              <p>BVM Engineering College, Gujarat, India · 2003</p>
-            </div>
-            <div class="edu-card cert">
-              <h3>Snowflake SnowPro Associate</h3>
-              <p>Certification</p>
-            </div>
-            <div class="edu-card cert">
-              <h3>Claude Code in Action</h3>
-              <p>Certification, Anthropic AI</p>
-            </div>
+          <div class="timeline">
+            <article class="job current">
+              <h3>QA Manager &amp; Data Quality Leader</h3>
+              <div class="meta">Driving enterprise data quality strategy and automation for ETL and reporting platforms</div>
+              <ul>
+                <li>Established QA frameworks for warehouse transformations, reconciliation, and business rule validation.</li>
+                <li>Led automation initiatives that reduced defect discovery time and improved reporting confidence.</li>
+                <li>Partnered with engineering, analytics, and business teams to align quality gates with release needs.</li>
+              </ul>
+            </article>
+            <article class="job">
+              <h3>Senior QA / Data Quality Specialist</h3>
+              <div class="meta">Focused on data pipeline validation, automation, and dashboard quality assurance</div>
+              <ul>
+                <li>Built ETL testing strategies for large-scale data movements across multiple source systems.</li>
+                <li>Created regression suites to catch defects before production and reduce manual validation effort.</li>
+                <li>Worked closely with data engineering and BI teams to resolve data integrity issues at the source.</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="contact section" id="contact">
-        <div class="container contact-grid">
+      <section class="section achievements">
+        <div class="container achievements-grid">
           <div>
-            <h2>Let's talk quality</h2>
-            <p class="lede">Open to conversations about QA leadership and data quality.</p>
-            <div class="cl">
-              <a href="mailto:paresh_patel61080@yahoo.com"><small>Email</small>paresh_patel61080@yahoo.com</a>
-              <a href="tel:+917575894331"><small>Phone</small>+91 75758 94331</a>
-              <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/pareshkumarrpatel</a>
+            <div class="section-header">
+              <span class="kicker">Impact</span>
+              <h2>Results that matter.</h2>
+            </div>
+            <div class="bars in" style="--w: 92%;">
+              <div class="bar">
+                <small><b>Data quality maturity</b><span>92%</span></small>
+                <div class="tr"><i></i></div>
+              </div>
+              <div class="bar">
+                <small><b>Automation coverage</b><span>88%</span></small>
+                <div class="tr"><i></i></div>
+              </div>
+              <div class="bar">
+                <small><b>Regression reliability</b><span>94%</span></small>
+                <div class="tr"><i></i></div>
+              </div>
             </div>
           </div>
-          <form id="f">
-            <label>Your name<input id="n" required autocomplete="name" /></label>
-            <label>Your email<input id="e" type="email" required autocomplete="email" /></label>
-            <label>Message<textarea id="m" required></textarea></label>
-            <button class="btn btn-primary" type="submit">Send message</button>
-            <p class="fm">This opens your email app with the message ready to send.</p>
+          <ul class="al">
+            <li><b>16+</b> years improving ETL and data quality outcomes.</li>
+            <li><b>10→2.5</b> day defect resolution cycle improvement.</li>
+            <li><b>20M+</b> records validated daily across production data flows.</li>
+            <li><b>100%</b> focus on risk reduction, trust, and reporting accuracy.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <span class="kicker">Contact</span>
+            <h2>Build confidence into every decision.</h2>
+            <p class="lede">If you need a QA strategy that protects data quality and keeps business reporting reliable, let’s connect.</p>
+            <div class="cl">
+              <a href="mailto:paresh.patel.qa@gmail.com">paresh.patel.qa@gmail.com<small>Email</small></a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/paresh-patel<small>LinkedIn</small></a>
+            </div>
+          </div>
+          <form>
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea placeholder="Tell me about your data quality or QA needs."></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+            <div class="fm">I typically respond within 1–2 business days.</div>
           </form>
         </div>
       </section>
@@ -1301,64 +1172,11 @@
 
     <footer>
       <div class="wrap">
-        <span>© <span id="y"></span> Paresh Patel · Gandhinagar, Gujarat, India</span>
-        <span>
-          <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:paresh_patel61080@yahoo.com">Email</a>
-          <a href="Paresh-Patel-Resume.pdf" download>Resume</a>
-        </span>
+        <span>© 2026 Paresh Patel</span>
+        <div>
+          <a href="#top">Back to top</a>
+        </div>
       </div>
     </footer>
-
-    <script>
-      const nav = document.querySelector('.nav-links');
-      const mb = document.getElementById('mb');
-      mb.onclick = () => {
-        const open = nav.classList.toggle('open');
-        mb.setAttribute('aria-expanded', open);
-      };
-      nav.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A') {
-          nav.classList.remove('open');
-          mb.setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      document.getElementById('y').textContent = new Date().getFullYear();
-
-      const io = new IntersectionObserver((es) => {
-        es.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          io.unobserve(entry.target);
-          if (entry.target.id === 'bars') {
-            entry.target.classList.add('in');
-            return;
-          }
-          if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-          entry.target.querySelectorAll('[data-n]').forEach((s) => {
-            const targetValue = +s.dataset.n;
-            const start = performance.now();
-            const tick = (now) => {
-              const p = Math.min((now - start) / 1100, 1);
-              s.textContent = Math.round(targetValue * (1 - Math.pow(1 - p, 3)));
-              if (p < 1) requestAnimationFrame(tick);
-            };
-            requestAnimationFrame(tick);
-          });
-        });
-      }, { threshold: 0.4 });
-      io.observe(document.querySelector('.proof'));
-      io.observe(document.getElementById('bars'));
-
-      const form = document.getElementById('f');
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = document.getElementById('n').value;
-        const email = document.getElementById('e').value;
-        const message = document.getElementById('m').value;
-        const body = encodeURIComponent(`${message}\n\nFrom: ${name} (${email})`);
-        location.href = `mailto:paresh_patel61080@yahoo.com?subject=${encodeURIComponent('Portfolio enquiry from ' + name)}&body=${body}`;
-      });
-    </script>
   </body>
 </html>
