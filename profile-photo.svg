@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
+  <title id="title">Paresh Patel profile</title>
+  <desc id="desc">A stylized profile portrait of Paresh Patel.</desc>
+  <rect width="500" height="500" fill="#f5f5f5"/>
+  <ellipse cx="250" cy="360" rx="160" ry="110" fill="#d9d0c6"/>
+  <path d="M132 420c28-72 73-109 118-109s92 37 118 109v49H132z" fill="#d9d0c6"/>
+  <path d="M185 200c0-52 27-98 65-98s65 46 65 98v26c0 50-28 92-65 92s-65-42-65-92z" fill="#f1d0b3"/>
+  <path d="M155 205c10-75 55-124 96-124 44 0 89 47 96 122-18-21-34-29-57-31-20-2-49 4-68 12-18 8-39 14-67 21z" fill="#2a1d1b"/>
+  <path d="M168 220c6-34 25-56 57-64 22-5 46-5 68 3 19 7 33 16 47 30-8 10-16 16-25 20-18 9-38 14-61 15-23 2-42-1-86-4z" fill="#261919" opacity="0.9"/>
+  <path d="M224 310h52c12 0 22 10 22 22v15c0 12-10 22-22 22h-52c-12 0-22-10-22-22v-15c0-12 10-22 22-22z" fill="#f3d0b5"/>
+  <path d="M198 305c10 39 26 58 52 58 27 0 43-20 53-59l-15-11h-75z" fill="#f6dcc0"/>
+  <path d="M205 260c8 17 21 25 45 25 25 0 39-9 45-25" fill="none" stroke="#9c6d52" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="215" cy="260" rx="14" ry="18" fill="#fff"/>
+  <ellipse cx="285" cy="260" rx="14" ry="18" fill="#fff"/>
+  <ellipse cx="215" cy="262" rx="7" ry="10" fill="#2a2a2a"/>
+  <ellipse cx="285" cy="262" rx="7" ry="10" fill="#2a2a2a"/>
+  <path d="M180 265h72M248 265h72" stroke="#8c9fa8" stroke-width="6" stroke-linecap="round"/>
+  <rect x="168" y="246" width="64" height="30" rx="10" fill="none" stroke="#6d7f8b" stroke-width="6"/>
+  <rect x="268" y="246" width="64" height="30" rx="10" fill="none" stroke="#6d7f8b" stroke-width="6"/>
+  <path d="M232 246h36" stroke="#6d7f8b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M225 286c18 7 31 8 50 0" fill="none" stroke="#9c6d52" stroke-width="5" stroke-linecap="round"/>
+  <path d="M235 305l-5 13h37l-6-13z" fill="#d8a987" opacity="0.9"/>
+  <path d="M177 410h146c39 0 58 25 58 58v20H120v-20c0-32 18-58 57-58z" fill="#d7cfca"/>
+  <circle cx="120" cy="438" r="13" fill="#d7cfca"/>
+  <circle cx="380" cy="438" r="13" fill="#d7cfca"/>
+  <circle cx="250" cy="410" r="12" fill="#d7cfca"/>
+</svg>
