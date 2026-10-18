@@ -325,6 +325,39 @@
         font-size: 0.9rem;
       }
 
+      .experience-grid,
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px;
+      }
+      .role-meta {
+        display: block;
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+      }
+      .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .check-list li {
+        position: relative;
+        padding-left: 22px;
+        color: var(--text);
+      }
+      .check-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--green-strong);
+        font-weight: 800;
+      }
+
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -372,9 +405,23 @@
         color: var(--ink);
       }
 
+      .contact-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .contact-list a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .contact-list a:hover { text-decoration: underline; }
+
       @media (max-width: 900px) {
         .hero-grid,
         .about-grid,
+        .experience-grid,
+        .info-grid,
         .skills-grid {
           grid-template-columns: 1fr;
         }
@@ -418,6 +465,7 @@
         <button class="menu" id="mb" aria-expanded="false" aria-controls="lk">Menu</button>
         <nav class="nav-links" id="lk" aria-label="Main navigation">
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#contact" class="cta">Contact</a>
         </nav>
@@ -465,10 +513,15 @@
           <div class="about-grid">
             <div class="card about-copy">
               <p>
-                I’m a QA and data quality leader focused on making enterprise reporting reliable,
-                repeatable, and defensible. My background spans ETL validation, warehouse testing,
-                data reconciliation, automation, and cross-functional quality strategy for large-scale
-                analytics platforms.
+                QA Manager and Data Quality leader with 16+ years of experience in ETL validation,
+                automated testing, and enterprise data quality strategy. I specialize in building
+                reliable QA programs for complex data platforms and driving measurable improvements
+                in defect reduction, regression performance, and quality assurance governance.
+              </p>
+              <p>
+                My focus is on helping teams ship data products they can trust, combining ETL
+                validation, warehouse testing, business rule validation, and automation to reduce
+                production risk while accelerating delivery.
               </p>
               <div class="pill-list">
                 <span class="pill">ETL Validation</span>
@@ -487,11 +540,44 @@
                 I build testing systems that validate both the user experience and the source of truth,
                 so organizations can move faster without sacrificing data confidence.
               </p>
-              <ul>
-                <li>• Data quality strategy and governance</li>
-                <li>• Test automation frameworks for analytics</li>
-                <li>• Cross-functional QA leadership</li>
-                <li>• Business-critical reconciliation checks</li>
+              <ul class="check-list">
+                <li>Data quality strategy and governance</li>
+                <li>Test automation frameworks for analytics</li>
+                <li>Cross-functional QA leadership</li>
+                <li>Business-critical reconciliation checks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Experience</span>
+            <h2>Leadership in analytics QA and data quality.</h2>
+          </div>
+          <div class="experience-grid">
+            <div class="card">
+              <p class="kicker" style="margin-bottom: 10px;">Current Role</p>
+              <h3>QA Manager / QA Lead</h3>
+              <span class="role-meta">Rise Analytics (A Trellance Company) • Dec 2019 – Present</span>
+              <ul class="check-list">
+                <li>Lead QA for ETL, warehouse, BI, and cloud data systems.</li>
+                <li>Reduced regression effort by 40% using Python, Selenium, CI/CD, and structured automation.</li>
+                <li>Improved defect resolution from 10 days to 2.5 days through root cause analysis and governance.</li>
+                <li>Built AI-assisted validation workflows using Claude Code, AI agents, SQL, and Python.</li>
+              </ul>
+            </div>
+
+            <div class="card testimonial-box">
+              <p class="kicker" style="margin-bottom: 10px;">Strengths</p>
+              <h3 style="margin-bottom: 16px;">Core impact areas</h3>
+              <ul class="check-list">
+                <li>ETL and warehouse test strategy across modern analytics ecosystems.</li>
+                <li>End-to-end QA for data pipelines, reporting layers, and data products.</li>
+                <li>Automation that lowers manual effort while improving repeatability.</li>
+                <li>Cross-functional leadership that aligns engineering, product, and operations.</li>
               </ul>
             </div>
           </div>
@@ -556,12 +642,38 @@
               <ul>
                 <li>Python</li>
                 <li>Playwright</li>
+                <li>Selenium</li>
                 <li>Test Automation</li>
                 <li>CI/CD Pipelines</li>
                 <li>YAML</li>
+                <li>Jenkins</li>
+                <li>AI Agents</li>
                 <li>Test Strategy</li>
-                <li>Automation Framework Design</li>
                 <li>Quality Gates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Education</span>
+            <h2>Academic background and credentials.</h2>
+          </div>
+          <div class="info-grid">
+            <div class="card">
+              <h3>Education</h3>
+              <p><strong>Master of Science, Information Technology</strong><br /><span class="role-meta">University of Northern Virginia, USA</span></p>
+              <p><strong>Bachelor of Engineering, Electrical Engineering</strong><br /><span class="role-meta">BVM Engineering College, Gujarat, India</span></p>
+            </div>
+
+            <div class="card">
+              <h3>Certifications</h3>
+              <ul class="check-list">
+                <li>Snowflake SnowPro Associate</li>
+                <li>Claude Code in Action</li>
               </ul>
             </div>
           </div>
@@ -576,7 +688,13 @@
           </div>
           <div class="card">
             <p>Available for data quality leadership, ETL QA strategy, and analytics validation work.</p>
-            <p>Email: paresh.patel@example.com</p>
+            <div class="contact-list">
+              <a href="mailto:paresh_patel61080@yahoo.com">paresh_patel61080@yahoo.com</a>
+              <a href="tel:+917575894331">+91 75758 94331</a>
+              <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">linkedin.com/in/pareshkumarrpatel</a>
+              <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">github.com/pareshrpatel2011-boop</a>
+              <a href="https://pareshrpatel2011-boop.github.io/" target="_blank" rel="noopener">pareshrpatel2011-boop.github.io</a>
+            </div>
           </div>
         </div>
       </section>
