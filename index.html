@@ -159,7 +159,7 @@
       }
 
       .hero {
-        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(180deg, #071721 0%, #0d2330 100%);
+        background: radial-gradient(circle at top right, rgba(60,123,255,0.28) 0%, transparent 28%), radial-gradient(circle at bottom left, rgba(44,201,138,0.18) 0%, transparent 30%), linear-gradient(180deg, #071721 0%, #0b1f2b 100%);
         color: white;
         padding: 110px 0 96px;
         position: relative;
@@ -238,88 +238,6 @@
         color: rgba(214, 235, 244, 0.8);
         font-size: 0.94rem;
       }
-
-      .validation-card {
-        background: rgba(11, 28, 38, 0.78);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        box-shadow: 0 26px 68px rgba(0,0,0,0.26);
-        padding: 22px 20px;
-      }
-      .run-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        color: rgba(214, 235, 244, 0.78);
-        font-size: 0.88rem;
-        padding-bottom: 14px;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        margin-bottom: 6px;
-      }
-      .run-head b {
-        color: #fff;
-        font-size: 2.1rem;
-        line-height: 1.1;
-        letter-spacing: -0.04em;
-        font-family: "Bricolage Grotesque", "Space Grotesk", sans-serif;
-      }
-      .run-head span {
-        color: rgba(214, 235, 244, 0.9);
-        font-size: 0.9rem;
-      }
-      .checklist {
-        display: flex;
-        flex-direction: column;
-      }
-      .check {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-        color: #DCE8ED;
-        font-size: 1.08rem;
-        line-height: 1.5;
-      }
-      .check:last-child { border-bottom: 0; }
-      .check .tick {
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        border: 2px solid var(--pass);
-        background: var(--pass);
-        display: grid;
-        place-items: center;
-        flex: none;
-      }
-      .check .tick:after {
-        content: "";
-        width: 6px;
-        height: 11px;
-        border: solid var(--ink);
-        border-width: 0 2.5px 2.5px 0;
-        transform: rotate(45deg) translate(-1px, -1px);
-      }
-      .run-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 16px;
-        font-size: 0.9rem;
-        color: #8FA8B4;
-      }
-      .run-footer b {
-        color: var(--pass);
-        font-weight: 700;
-        font-size: 1.08rem;
-      }
-      .hero .e { opacity: 0; transform: translateY(16px); animation: up .8s forwards; }
-      .hero .e:nth-child(2){ animation-delay: .12s; }
-      .hero .e:nth-child(3){ animation-delay: .24s; }
-      .hero .e:nth-child(4){ animation-delay: .36s; }
-      .hero .e:nth-child(5){ animation-delay: .48s; }
-      @keyframes up { to { opacity: 1; transform: none; } }
 
       .proof {
         background: var(--card);
@@ -454,344 +372,14 @@
         color: var(--ink);
       }
 
-      .cert-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 22px;
-      }
-      .cert-card {
-        background: linear-gradient(180deg, #ffffff 0%, #f6fbfd 100%);
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        padding: 24px;
-        box-shadow: var(--shadow);
-      }
-      .cert-badge {
-        width: 52px;
-        height: 52px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, var(--green), #a1ebc8);
-        color: var(--bg);
-        border-radius: 16px;
-        font-weight: 800;
-        margin-bottom: 18px;
-      }
-      .cert-card h3 {
-        font-size: 1.15rem;
-        margin-bottom: 8px;
-      }
-      .cert-card p {
-        color: var(--text-soft);
-        margin: 0;
-      }
-
-      .project-shell {
-        background: linear-gradient(180deg, #f2f7f9 0%, #edf5f8 100%);
-        border: 1px solid var(--line);
-        border-radius: 26px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-      }
-      .project-header {
-        background: linear-gradient(135deg, #0e2531 0%, #122d3c 100%);
-        color: white;
-        padding: 28px 28px 20px;
-      }
-      .project-header h3 {
-        font-size: clamp(1.6rem, 3vw, 2.4rem);
-        margin-bottom: 10px;
-      }
-      .project-body { padding: 28px; }
-      .project-points {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-      }
-      .point-card {
-        background: white;
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 18px;
-      }
-      .point-card h4 { margin-bottom: 10px; font-size: 1.05rem; }
-      .point-card p { color: var(--text-soft); margin-bottom: 0; }
-      .impact-row {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin-top: 24px;
-      }
-      .impact-box {
-        background: rgba(44,201,138,0.1);
-        border: 1px solid rgba(44,201,138,0.18);
-        border-radius: 18px;
-        padding: 18px;
-      }
-      .impact-box strong {
-        display: block;
-        font-size: 1.8rem;
-        color: var(--bg);
-        margin-bottom: 4px;
-      }
-      .impact-box span {
-        color: var(--text);
-        font-weight: 600;
-      }
-
-      .cta-panel {
-        background: linear-gradient(135deg, #071721 0%, #0e2732 100%);
-        color: white;
-        border-radius: 24px;
-        padding: 34px 28px;
-      }
-      .cta-panel h3 {
-        font-size: clamp(1.8rem, 3vw, 2.8rem);
-        margin-bottom: 12px;
-      }
-      .cta-panel p { color: rgba(235, 243, 247, 0.8); }
-      .cta-panel .btn-primary { margin-right: 12px; }
-
-      .experience { padding-top: 0; }
-      .timeline {
-        position: relative;
-        padding-left: 34px;
-        border-left: 2px solid var(--line);
-        margin-left: 6px;
-      }
-      .job {
-        position: relative;
-        padding-bottom: 44px;
-      }
-      .job:last-child { padding-bottom: 0; }
-      .job:before {
-        content: "";
-        position: absolute;
-        left: -43px;
-        top: 8px;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: var(--paper);
-        border: 3px solid var(--blue);
-      }
-      .job.current:before {
-        background: var(--pass);
-        border-color: var(--pass);
-        box-shadow: 0 0 0 6px rgba(43,181,131,.2);
-      }
-      .job h3 { font-size: 1.4rem; }
-      .job .meta { color: var(--muted); font-size: 0.95rem; margin: 4px 0 12px; }
-      .job ul { padding-left: 20px; max-width: 72ch; }
-      .job li { margin-bottom: 6px; }
-      .job.current {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: var(--r);
-        padding: 28px;
-        margin-bottom: 44px;
-        margin-left: 0;
-      }
-      .job.current:before { left: -43px; }
-
-      .project-grid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 18px;
-      }
-      .project-card {
-        grid-column: span 2;
-        background: var(--ink);
-        color: #fff;
-        border-radius: var(--r);
-        padding: 26px;
-        min-height: 210px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        overflow: hidden;
-        transition: transform .25s, box-shadow .25s;
-      }
-      .project-card:nth-child(1),
-      .project-card:nth-child(2) { grid-column: span 3; }
-      .project-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 18px 40px rgba(14,37,48,.25);
-      }
-      .project-card:after {
-        content: "";
-        position: absolute;
-        right: -40px;
-        bottom: -40px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 26px solid rgba(43,181,131,.18);
-        transition: transform .4s;
-      }
-      .project-card:hover:after { transform: scale(1.25); }
-      .project-card h3 { font-size: 1.45rem; max-width: 14ch; }
-      .project-card p { color: #B7CAD3; font-size: 0.95rem; margin-top: 12px; max-width: 34ch; }
-      .project-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 36px;
-      }
-      .project-tags li {
-        list-style: none;
-        font-size: 0.88rem;
-        padding: 5px 12px;
-        border-radius: 99px;
-        background: var(--card);
-        border: 1px solid var(--line);
-        color: var(--ink);
-      }
-      .note { color: var(--muted); font-size: 0.92rem; margin-top: 22px; }
-
-      .achievements { background: var(--card); border-block: 1px solid var(--line); }
-      .achievements-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 56px;
-        align-items: center;
-      }
-      .bars { display: grid; gap: 22px; }
-      .bar small {
-        display: flex;
-        justify-content: space-between;
-        color: var(--muted);
-        font-size: 0.92rem;
-        margin-bottom: 8px;
-      }
-      .bar small b { color: var(--ink); }
-      .tr {
-        height: 12px;
-        background: var(--paper);
-        border-radius: 99px;
-        overflow: hidden;
-        border: 1px solid var(--line);
-      }
-      .tr i {
-        display: block;
-        height: 100%;
-        border-radius: 99px;
-        background: var(--pass);
-        width: 0;
-        transition: width 1.2s cubic-bezier(.2,.8,.2,1);
-      }
-      .tr i.o { background: #B3C3CB; }
-      .bars.in .tr i { width: var(--w); }
-      .al li {
-        list-style: none;
-        padding: 18px 0;
-        border-bottom: 1px solid var(--line);
-      }
-      .al li:last-child { border: 0; }
-      .al b {
-        font: 700 1.3rem "Bricolage Grotesque", sans-serif;
-        color: var(--ink);
-        margin-right: 8px;
-      }
-
-      .education-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
-      .edu-card {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: var(--r);
-        padding: 26px;
-      }
-      .edu-card h3 { font-size: 1.15rem; margin-bottom: 6px; }
-      .edu-card p { color: var(--muted); font-size: 0.95rem; }
-      .edu-card.cert { border-left: 4px solid var(--pass); }
-
-      .contact { background: var(--ink); color: white; }
-      .contact-grid {
-        display: grid;
-        grid-template-columns: .9fr 1.1fr;
-        gap: 56px;
-      }
-      .contact .lede { color: #9FB5BF; }
-      .cl a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        padding: 14px 0;
-        border-bottom: 1px solid rgba(255,255,255,.12);
-        transition: padding .2s,color .2s;
-      }
-      .cl a:hover { color: var(--pass); padding-left: 8px; }
-      .cl small { display: block; color: #7E98A4; }
-      form { display: grid; gap: 14px; }
-      label {
-        font-size: 0.92rem;
-        color: #C9D8DF;
-        display: grid;
-        gap: 6px;
-      }
-      input, textarea {
-        font: inherit;
-        padding: 13px 14px;
-        border-radius: 10px;
-        border: 1px solid rgba(255,255,255,.2);
-        background: rgba(255,255,255,.06);
-        color: #fff;
-        width: 100%;
-      }
-      input:focus, textarea:focus {
-        outline: 0;
-        border-color: var(--pass);
-        background: rgba(255,255,255,.1);
-      }
-      textarea { min-height: 130px; resize: vertical; }
-      .fm { font-size: 0.88rem; color: #7E98A4; }
-
-      footer {
-        background: #0A1B24;
-        color: #8FA8B4;
-        padding: 28px 0;
-        font-size: 0.92rem;
-      }
-      footer .wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 12px;
-      }
-      footer a {
-        color: #fff;
-        margin-left: 18px;
-        text-decoration: none;
-      }
-      footer a:hover { color: var(--pass); }
-
       @media (max-width: 900px) {
         .hero-grid,
         .about-grid,
-        .achievements-grid,
-        .contact-grid,
-        .skills-grid,
-        .project-points,
-        .impact-row,
-        .cert-grid,
-        .education-grid {
+        .skills-grid {
           grid-template-columns: 1fr;
         }
         .skill-block.wide { grid-column: span 1; }
-        .project-grid { grid-template-columns: 1fr 1fr; }
-        .project-card,
-        .project-card:nth-child(1),
-        .project-card:nth-child(2) { grid-column: span 1; }
-        .project-card:last-child { grid-column: span 2; }
         .pg { grid-template-columns: 1fr 1fr; }
-        .pg div:nth-child(3) { border-left: 0; padding-left: 0; }
-        .pg div:nth-child(n+3) { border-top: 1px solid var(--line); }
       }
 
       @media (max-width: 700px) {
@@ -810,12 +398,8 @@
         }
         .nav-links.open { display: flex; }
         .hero { padding: 112px 0 64px; }
-        .skills-grid, .project-grid { grid-template-columns: 1fr; }
-        .project-card, .project-card:nth-child(1), .project-card:nth-child(2), .project-card:last-child { grid-column: auto; }
-        .job.current { padding: 20px; }
+        .skills-grid { grid-template-columns: 1fr; }
         .cta-row .btn { flex: 1; text-align: center; }
-        .pg strong { font-size: 2rem; }
-        .pg div { padding: 24px 14px; }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -835,9 +419,6 @@
         <nav class="nav-links" id="lk" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
           <a href="#contact" class="cta">Contact</a>
         </nav>
       </div>
@@ -855,15 +436,13 @@
               ETL validation, warehouse testing, automation, and AI-assisted QA workflows at scale.
             </p>
             <div class="cta-row e">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-secondary">Connect</a>
-              <a href="Paresh-Patel-Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+              <a href="#contact" class="btn btn-primary">Connect</a>
             </div>
             <div class="meta-line e">16+ years in ETL, database testing, automation, and modern analytics quality</div>
           </div>
 
           <div class="profile-wrap e" aria-label="Profile photo">
-            <img src="profile-photo.svg.png" alt="Paresh Patel" class="profile-photo" />
+            <img src="profile-photo.svg" alt="Paresh Patel" class="profile-photo" />
           </div>
         </div>
       </section>
@@ -890,12 +469,6 @@
                 repeatable, and defensible. My background spans ETL validation, warehouse testing,
                 data reconciliation, automation, and cross-functional quality strategy for large-scale
                 analytics platforms.
-              </p>
-              <p>
-                I’ve built frameworks that test what users see in dashboards and ensure the underlying
-                warehouse logic is correct. That includes validating Power BI visuals against source data,
-                automating regression checks, and catching production risks before business teams rely on
-                the numbers.
               </p>
               <div class="pill-list">
                 <span class="pill">ETL Validation</span>
@@ -991,188 +564,22 @@
                 <li>Quality Gates</li>
               </ul>
             </div>
-
-            <div class="skill-block">
-              <h3>AI-Enabled Delivery</h3>
-              <ul>
-                <li>AI-Assisted QA</li>
-                <li>Claude Code</li>
-                <li>Prompt Engineering</li>
-                <li>Automation Acceleration</li>
-                <li>Quality Engineering</li>
-                <li>Decision Support</li>
-                <li>Workflow Design</li>
-                <li>Process Optimization</li>
-              </ul>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="certifications">
-        <div class="container">
-          <div class="section-header">
-            <span class="kicker">Certifications</span>
-            <h2>Validated expertise</h2>
-          </div>
-          <div class="cert-grid">
-            <article class="cert-card">
-              <div class="cert-badge">1</div>
-              <h3>Certified Data Management Professional</h3>
-              <p>Core education in data quality, governance, and enterprise information management.</p>
-            </article>
-            <article class="cert-card">
-              <div class="cert-badge">2</div>
-              <h3>Power BI &amp; Analytics QA</h3>
-              <p>Hands-on validation patterns for reporting confidence, reconciliation, and model checks.</p>
-            </article>
-            <article class="cert-card">
-              <div class="cert-badge">3</div>
-              <h3>Automation &amp; Test Strategy</h3>
-              <p>Framework design for scalable regression coverage and quality gates across pipelines.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-header">
-            <span class="kicker">Selected Work</span>
-            <h2>Programs that improved trust, speed, and visibility.</h2>
-          </div>
-          <div class="project-shell">
-            <div class="project-header">
-              <h3>Enterprise analytics quality transformation</h3>
-              <p>Built a cross-platform quality framework for a multi-source data environment spanning ETL, semantic models, and business reporting.</p>
-            </div>
-            <div class="project-body">
-              <div class="project-points">
-                <div class="point-card">
-                  <h4>What changed</h4>
-                  <p>Standardized tests across warehouse pipelines, data contracts, and business-critical dashboards to reduce silent data drift.</p>
-                </div>
-                <div class="point-card">
-                  <h4>Why it mattered</h4>
-                  <p>Stakeholders could trust downstream metrics without extensive manual review or delayed release cycles.</p>
-                </div>
-                <div class="point-card">
-                  <h4>What I owned</h4>
-                  <p>Strategy, automation design, validation playbooks, defect triage, and leadership reporting for QA governance.</p>
-                </div>
-                <div class="point-card">
-                  <h4>How it scaled</h4>
-                  <p>Automation reduced repeat work, accelerated release confidence, and made data quality checks visible to teams beyond QA.</p>
-                </div>
-              </div>
-              <div class="impact-row">
-                <div class="impact-box"><strong>35%</strong><span>faster validation</span></div>
-                <div class="impact-box"><strong>40%</strong><span>lower regression effort</span></div>
-                <div class="impact-box"><strong>30%</strong><span>fewer defects</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section experience" id="experience">
-        <div class="container">
-          <div class="section-header">
-            <span class="kicker">Experience</span>
-            <h2>Delivery across data, QA, and analytics operations.</h2>
-          </div>
-          <div class="timeline">
-            <article class="job current">
-              <h3>QA Manager &amp; Data Quality Leader</h3>
-              <div class="meta">Driving enterprise data quality strategy and automation for ETL and reporting platforms</div>
-              <ul>
-                <li>Established QA frameworks for warehouse transformations, reconciliation, and business rule validation.</li>
-                <li>Led automation initiatives that reduced defect discovery time and improved reporting confidence.</li>
-                <li>Partnered with engineering, analytics, and business teams to align quality gates with release needs.</li>
-              </ul>
-            </article>
-            <article class="job">
-              <h3>Senior QA / Data Quality Specialist</h3>
-              <div class="meta">Focused on data pipeline validation, automation, and dashboard quality assurance</div>
-              <ul>
-                <li>Built ETL testing strategies for large-scale data movements across multiple source systems.</li>
-                <li>Created regression suites to catch defects before production and reduce manual validation effort.</li>
-                <li>Worked closely with data engineering and BI teams to resolve data integrity issues at the source.</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section achievements">
-        <div class="container achievements-grid">
-          <div>
-            <div class="section-header">
-              <span class="kicker">Impact</span>
-              <h2>Results that matter.</h2>
-            </div>
-            <div class="bars in" style="--w: 92%;">
-              <div class="bar">
-                <small><b>Data quality maturity</b><span>92%</span></small>
-                <div class="tr"><i></i></div>
-              </div>
-              <div class="bar">
-                <small><b>Automation coverage</b><span>88%</span></small>
-                <div class="tr"><i></i></div>
-              </div>
-              <div class="bar">
-                <small><b>Regression reliability</b><span>94%</span></small>
-                <div class="tr"><i></i></div>
-              </div>
-            </div>
-          </div>
-          <ul class="al">
-            <li><b>16+</b> years improving ETL and data quality outcomes.</li>
-            <li><b>10→2.5</b> day defect resolution cycle improvement.</li>
-            <li><b>20M+</b> records validated daily across production data flows.</li>
-            <li><b>100%</b> focus on risk reduction, trust, and reporting accuracy.</li>
-          </ul>
         </div>
       </section>
 
       <section class="section" id="contact">
-        <div class="container contact-grid">
-          <div>
+        <div class="container">
+          <div class="section-header">
             <span class="kicker">Contact</span>
-            <h2>Build confidence into every decision.</h2>
-            <p class="lede">If you need a QA strategy that protects data quality and keeps business reporting reliable, let’s connect.</p>
-            <div class="cl">
-              <a href="mailto:paresh.patel.qa@gmail.com">paresh.patel.qa@gmail.com<small>Email</small></a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/paresh-patel<small>LinkedIn</small></a>
-            </div>
+            <h2>Let’s connect.</h2>
           </div>
-          <form>
-            <label>
-              Name
-              <input type="text" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Message
-              <textarea placeholder="Tell me about your data quality or QA needs."></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">Send inquiry</button>
-            <div class="fm">I typically respond within 1–2 business days.</div>
-          </form>
+          <div class="card">
+            <p>Available for data quality leadership, ETL QA strategy, and analytics validation work.</p>
+            <p>Email: paresh.patel@example.com</p>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer>
-      <div class="wrap">
-        <span>© 2026 Paresh Patel</span>
-        <div>
-          <a href="#top">Back to top</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
