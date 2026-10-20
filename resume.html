@@ -1,176 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paresh Patel | Resume</title>
-    <style>
-      :root {
-        --bg: #071722;
-        --panel: #0d1d2b;
-        --card: #ffffff;
-        --ink: #172b38;
-        --muted: #5d7382;
-        --line: rgba(23, 43, 56, 0.12);
-        --green: #2cc98a;
-        --blue: #3c7bff;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: #edf5f7;
-        color: var(--ink);
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        width: min(960px, calc(100% - 32px));
-        margin: 0 auto;
-      }
-      .sheet {
-        margin: 32px auto;
-        background: var(--card);
-        border: 1px solid var(--line);
-        box-shadow: 0 18px 48px rgba(9, 22, 32, 0.08);
-        border-radius: 18px;
-        overflow: hidden;
-      }
-      .top {
-        background: linear-gradient(135deg, var(--bg), #112f3f 100%);
-        color: white;
-        padding: 32px 28px;
-      }
-      h1 {
-        margin: 0;
-        font-size: clamp(2rem, 3.4vw, 3rem);
-        letter-spacing: -0.04em;
-      }
-      .subtitle {
-        color: #d5ebf3;
-        margin-top: 0.3rem;
-      }
-      .content {
-        padding: 28px;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 28px;
-      }
-      h2 {
-        margin: 0 0 12px;
-        font-size: 1.1rem;
-        letter-spacing: 0.08em;
-        color: var(--bg);
-        text-transform: uppercase;
-      }
-      p, li {
-        color: var(--ink);
-      }
-      ul {
-        margin: 0;
-        padding-left: 18px;
-      }
-      .meta {
-        color: var(--muted);
-      }
-      .section {
-        margin-bottom: 22px;
-      }
-      .pill {
-        display: inline-block;
-        padding: 0.38rem 0.7rem;
-        background: rgba(44, 201, 138, 0.12);
-        color: #0e603f;
-        border: 1px solid rgba(44, 201, 138, 0.3);
-        border-radius: 999px;
-        font-weight: 600;
-        margin: 0.15rem 0.25rem 0.15rem 0;
-      }
-      .contact a {
-        display: block;
-        color: var(--ink);
-        text-decoration: none;
-        margin-bottom: 0.35rem;
-      }
-      @media (max-width: 720px) {
-        .grid { grid-template-columns: 1fr; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sheet">
-        <div class="top">
-          <h1>Paresh Patel</h1>
-          <div class="subtitle">QA Manager &amp; Data Quality Leader</div>
-        </div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paresh Patel – Resume</title>
+<meta name="description" content="Resume of Paresh Patel, QA and test automation manager with 16 years in banking, healthcare and SaaS.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f5f9;
+    --ink: #17212b;
+    --muted: #55606c;
+    --rule: #d5dbe3;
+    --accent: #1f3864;
+    --accent-ink: #ffffff;
+    --link: #1f3864;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12171d;
+      --surface: #1b222b;
+      --ink: #e7ebf0;
+      --muted: #9aa5b1;
+      --rule: #2d3743;
+      --accent: #8fb0e8;
+      --accent-ink: #12171d;
+      --link: #8fb0e8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
-        <div class="content">
-          <div class="grid">
-            <div>
-              <div class="section">
-                <h2>Profile</h2>
-                <p>
-                  QA Manager and Data Quality leader with 16+ years of experience in ETL validation, automated testing, and enterprise data quality strategy.
-                  I specialize in building reliable QA programs for complex data platforms and driving measurable improvements in defect reduction, regression performance, and quality assurance maturity.
-                </p>
-              </div>
+  .page { max-width: 820px; margin: 0 auto; padding: 48px 24px 72px; }
 
-              <div class="section">
-                <h2>Experience</h2>
-                <p><strong>QA Manager / QA Lead</strong><br><span class="meta">Rise Analytics (A Trellance Company) • Dec 2019 – Present</span></p>
-                <ul>
-                  <li>Lead QA for ETL, warehouse, BI, and cloud data systems.</li>
-                  <li>Reduced regression effort by 40% using Python, Selenium, CI/CD, and structured automation.</li>
-                  <li>Improved defect resolution from 10 days to 2.5 days through RCA and quality governance.</li>
-                  <li>Built AI-assisted validation workflows with Claude Code, AI agents, SQL, and Python.</li>
-                </ul>
-              </div>
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+  h1 { margin: 0; font-size: 2.4rem; line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
+  .contact { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 0.94rem; }
+  .contact li { overflow-wrap: anywhere; }
+  .download {
+    font: inherit; font-size: 0.94rem; font-weight: 600;
+    background: var(--accent); color: var(--accent-ink);
+    border: 0; border-radius: 6px; padding: 10px 18px; cursor: pointer;
+  }
+  .download:hover { filter: brightness(1.12); }
 
-              <div class="section">
-                <h2>Key Skills</h2>
-                <div>
-                  <span class="pill">ETL/ELT</span>
-                  <span class="pill">Data Quality</span>
-                  <span class="pill">Data Warehouse</span>
-                  <span class="pill">Snowflake</span>
-                  <span class="pill">SQL</span>
-                  <span class="pill">Python</span>
-                  <span class="pill">Selenium</span>
-                  <span class="pill">Playwright</span>
-                  <span class="pill">Jenkins</span>
-                  <span class="pill">AI Agents</span>
-                  <span class="pill">RCA</span>
-                  <span class="pill">Regression Testing</span>
-                </div>
-              </div>
-            </div>
+  section { margin-top: 36px; }
+  h2 {
+    margin: 0 0 14px; padding-bottom: 6px;
+    font-size: 1.15rem; font-weight: 700; color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+  }
+  p { margin: 0; max-width: 72ch; }
 
-            <div>
-              <div class="section contact">
-                <h2>Contact</h2>
-                <a href="mailto:paresh_patel61080@yahoo.com">paresh_patel61080@yahoo.com</a>
-                <a href="tel:+917575894331">+91 75758 94331</a>
-                <a href="https://linkedin.com/in/pareshkumarrpatel" target="_blank" rel="noopener">linkedin.com/in/pareshkumarrpatel</a>
-                <a href="https://github.com/pareshrpatel2011-boop" target="_blank" rel="noopener">github.com/pareshrpatel2011-boop</a>
-              </div>
+  .role { margin-top: 22px; }
+  .role:first-of-type { margin-top: 0; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 16px; flex-wrap: wrap; }
+  .role h3 { margin: 0; font-size: 1.05rem; font-weight: 700; }
+  .role .dates { color: var(--muted); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+  .role .org { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  ul.points { margin: 8px 0 0; padding-left: 1.2rem; }
+  ul.points li { margin: 5px 0; padding-left: 2px; max-width: 78ch; }
+  ul.points li::marker { color: var(--accent); }
 
-              <div class="section">
-                <h2>Education</h2>
-                <p><strong>Master of Science, Information Technology</strong><br><span class="meta">University of Northern Virginia, USA</span></p>
-                <p><strong>Bachelor of Engineering, Electrical Engineering</strong><br><span class="meta">BVM Engineering College, Gujarat, India</span></p>
-              </div>
+  .edu-item, .cert-item { margin: 0 0 10px; }
+  .edu-item strong, .cert-item strong { display: block; }
+  .edu-item span, .cert-item span { color: var(--muted); font-size: 0.95rem; }
 
-              <div class="section">
-                <h2>Certifications</h2>
-                <p>Snowflake SnowPro Associate</p>
-                <p>Claude Code in Action</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  dl.skills { margin: 0; display: grid; grid-template-columns: 1fr; gap: 0; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+  dl.skills > div { padding: 12px 16px; border-top: 1px solid var(--rule); }
+  dl.skills > div:first-child { border-top: 0; }
+  dl.skills > div:nth-child(odd) { background: var(--surface); }
+  dl.skills dt { font-weight: 600; font-size: 0.92rem; margin: 0 0 2px; }
+  dl.skills dd { margin: 0; color: var(--muted); }
+  @media (min-width: 640px) {
+    dl.skills > div { display: grid; grid-template-columns: 200px 1fr; gap: 16px; }
+    dl.skills dt { margin: 0; }
+  }
+
+  @media (max-width: 520px) {
+    .page { padding: 32px 18px 56px; }
+    h1 { font-size: 2rem; }
+  }
+
+  @media print {
+    :root, :root:not([data-theme="light"]) {
+      --bg: #fff; --surface: #f3f5f9; --ink: #000; --muted: #333; --rule: #bbb; --accent: #1f3864; --link: #1f3864;
+    }
+    @page { size: A4; margin: 14mm; }
+    body { font-size: 10.5pt; line-height: 1.4; }
+    .page { max-width: none; padding: 0; }
+    .download { display: none; }
+    h1 { font-size: 22pt; }
+    section { margin-top: 16px; break-inside: auto; }
+    .role { break-inside: avoid; margin-top: 12px; }
+    h2 { break-after: avoid; }
+    a { text-decoration: none; }
+    dl.skills { border-color: #bbb; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <div>
+      <h1>Paresh Patel</h1>
+      <ul class="contact">
+        <li>Ahmedabad, Gujarat, India</li>
+        <li><a href="mailto:pareshrpatel2011@gmail.com">pareshrpatel2011@gmail.com</a></li>
+        <li><a href="tel:+917575894331">+917575894331</a></li>
+        <li><a href="https://linkedin.com/in/paresh-patel-0409b086">linkedin.com/in/paresh-patel-0409b086</a></li>
+        <li><a href="https://pareshrpatel2011-boop.github.io/">pareshrpatel2011-boop.github.io</a></li>
+      </ul>
     </div>
-  </body>
+    <button class="download" type="button" onclick="window.print()">Download PDF</button>
+  </header>
+
+  <section aria-labelledby="summary">
+    <h2 id="summary">Summary</h2>
+    <p>QA and test automation manager with 16 years in banking, healthcare and SaaS. Leads 5 QA engineers, cutting production defects by 30% and regression effort by 40% across pipelines of 20M+ daily records. Builds automation-first test strategy with Playwright, Python, CI/CD and Claude Code, and quality metrics for release decisions.</p>
+  </section>
+
+  <section aria-labelledby="experience">
+    <h2 id="experience">Experience</h2>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>QA Manager / QA Lead</h3>
+        <span class="dates">December 2019 – Present</span>
+      </div>
+      <p class="org">Rise Analytics (Trellance), Gujarat, India</p>
+      <ul class="points">
+        <li>Lead 5 QA engineers across 3 DWH platforms serving 200+ stakeholders, and grew the India QA team from nothing to 7 through hiring and mentoring.</li>
+        <li>Reduced regression effort by 40% with Python and Selenium frameworks and a CI/CD pipeline that runs the suite on demand in any environment.</li>
+        <li>Cut production defects by 30% and bug resolution from 10 days to 2.5 through daily root cause reviews with production support.</li>
+        <li>Improved ETL validation efficiency by 35% across cloud Snowflake, Azure Data Factory and dbt pipelines handling 20M+ daily records.</li>
+        <li>Built AI agents with Claude Code and MCP that turn Azure DevOps user stories into Azure Test Plans test cases, plus AI-assisted Power BI validation with Playwright and Snowflake MCP.</li>
+        <li>Defined the test strategy and database and development standards every project follows, with Power BI dashboards showing management test status.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>Senior Software QA Engineer</h3>
+        <span class="dates">June 2018 – August 2019</span>
+      </div>
+      <p class="org">YOInsights Technology, India</p>
+      <ul class="points">
+        <li>Designed hybrid Selenium, Python and Jenkins frameworks that gave the team repeatable cross-browser, regression and API coverage.</li>
+        <li>Verified backend data integrity across environments with SQL.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>Senior QA Analyst / Test Lead (DWH)</h3>
+        <span class="dates">August 2016 – March 2018</span>
+      </div>
+      <p class="org">Centraprise Corp, USA</p>
+      <ul class="points">
+        <li>Led QA for Teradata-to-Hadoop and Oracle-to-Greenplum migrations, validating ETL pipelines and Big Data workflows end to end.</li>
+        <li>Built iCEDQ automation with Jenkins integration and trained other product teams as the tool's go-to expert.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>Senior QA Analyst / Test Lead (DWH)</h3>
+        <span class="dates">October 2013 – July 2016</span>
+      </div>
+      <p class="org">Centraprise Corp, USA</p>
+      <ul class="points">
+        <li>Directed QA for the Oracle-to-Greenplum analytics migration, covering Informatica ETL, SOAP/REST services, Hive and Control-M schedules.</li>
+        <li>Validated Click Stream data model workflows and customer warehouse enhancements.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>Senior System Analyst / Batch Tester</h3>
+        <span class="dates">February 2012 – October 2013</span>
+      </div>
+      <p class="org">Niftek Inc, USA</p>
+      <ul class="points">
+        <li>Ran batch, ETL and backend testing for the Bill Pay platform, including Autosys jobs, PL/SQL procedures and UAT support.</li>
+      </ul>
+    </article>
+
+    <article class="role">
+      <div class="role-head">
+        <h3>Quality Assurance Engineer</h3>
+        <span class="dates">July 2011 – November 2011</span>
+      </div>
+      <p class="org">Cyberthink Inc, USA</p>
+      <ul class="points">
+        <li>Automated regression tests using QTP and VB scripting.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <ul class="points" style="margin-top:0">
+      <li>AI projects: Test Case Generator, SQL Validation Generator, ETL Validation Agent, Power BI Validation Framework, QA Reporting Assistant. Portfolio: <a href="https://pareshrpatel2011-boop.github.io/">pareshrpatel2011-boop.github.io</a></li>
+      <li>Validated predictive models including Next Best Product, Member Risk and payday lending.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="education">
+    <h2 id="education">Education</h2>
+    <p class="edu-item"><strong>MSc Information Technology</strong><span>University of Northern Virginia, USA, 2011</span></p>
+    <p class="edu-item"><strong>BE Electrical</strong><span>BVM Engineering College, Gujarat, India, 2003</span></p>
+  </section>
+
+  <section aria-labelledby="certs">
+    <h2 id="certs">Certifications</h2>
+    <p class="cert-item"><strong>Snowflake SnowPro Associate</strong></p>
+    <p class="cert-item"><strong>Claude Code in Action</strong><span>Anthropic</span></p>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <dl class="skills">
+      <div><dt>Automation and testing</dt><dd>Test automation strategy, Playwright, Selenium, Python, SQL, PL/SQL</dd></div>
+      <div><dt>Pipelines and tooling</dt><dd>CI/CD, Jenkins, Azure DevOps, Git, REST and SOAP API testing (SoapUI)</dd></div>
+      <div><dt>Data platforms and AI</dt><dd>Snowflake, Azure Data Factory, dbt, Claude Code, MCP</dd></div>
+      <div><dt>Leadership</dt><dd>Release management, root cause analysis, team leadership, stakeholder management</dd></div>
+    </dl>
+  </section>
+
+</main>
+</body>
 </html>
